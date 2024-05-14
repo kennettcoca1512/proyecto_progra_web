@@ -31,7 +31,7 @@ export default function Header(){
     }
     return(
         <>
-            <span style={spanstyle}>
+            <header style={spanstyle}>
                 <h2>PCERDA</h2>
                 <ul style={listStyle}>
                     <li style={liStyle}>Nuevos</li>
@@ -41,7 +41,7 @@ export default function Header(){
                 <img></img>
                 <p style={pstyle}>Ayuda</p>
                 <button style={buttonStyle}>Mi Cuenta</button>
-            </span>
+            </header>
             <hr style={hrStyle}></hr>
         </>
     )
