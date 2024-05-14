@@ -1,5 +1,5 @@
 import Header from "../components/Shares/Header/Header"
-function LandingPage(){
+export default function LandingPage(){
     return (
         <>
             <Header />
