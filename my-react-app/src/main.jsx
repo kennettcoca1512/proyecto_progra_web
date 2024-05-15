@@ -6,11 +6,21 @@ import{
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
+import ResultadosBusqueda from './routes/ResultadosBusqueda.jsx'
+import DetalleProducto from './routes/DetalleProducto.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <LandingPage />
+  },
+  {
+    path: "/resultadoBusqueda",
+    element: <ResultadosBusqueda />
+  },
+  {
+    path: "/detalleProducto",
+    element: <DetalleProducto />
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
