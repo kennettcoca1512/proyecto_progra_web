@@ -4,18 +4,19 @@ export default function Footer(){
         flexDirection:'column',
         whiteSpace: 'nowrap',
         listStyleType: 'none',
-        margin: '3.5rem'
+        margin: '3rem',
+        paddingBottom: '40px'
     }
     const genlistStyle={
         display: 'flex',
         backgroundColor: 'grey'
     }
     const liStyle={
-        marginBottom:'25px',
+        marginBottom:'30px',
         fontSize:'20px'
     }
     const liStyle2={
-        marginBottom: '15px'
+        marginBottom: '20px'
     }
     return(
         <>
