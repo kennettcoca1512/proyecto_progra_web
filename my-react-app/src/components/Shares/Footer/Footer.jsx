@@ -9,14 +9,18 @@ export default function Footer(){
     }
     const genlistStyle={
         display: 'flex',
-        backgroundColor: 'grey'
+        backgroundColor: 'grey',
+        PaddingLeft:'50%'
     }
     const liStyle={
         marginBottom:'30px',
-        fontSize:'20px'
+        fontSize:'30px',
+        marginLeft: '150px'
     }
     const liStyle2={
-        marginBottom: '20px'
+        marginBottom: '25px',
+        fontSize: '23px',
+        marginLeft: '150px'
     }
     return(
         <>
@@ -27,19 +31,19 @@ export default function Footer(){
                         <li style={liStyle2}>Privacy Terms</li>
                     </ul>
                     <ul style={listStyle}>
-                        <li style={liStyle2}><b>Cuenta</b></li>
+                        <li style={liStyle}><b>Cuenta</b></li>
                         <li style={liStyle2}>Login</li>
                         <li style={liStyle2}>Registro</li>
                         <li style={liStyle2}>Carrito</li>
                     </ul>
                     <ul style={listStyle}>
-                        <li style={liStyle2}><b>Productos</b></li>
+                        <li style={liStyle}><b>Productos</b></li>
                         <li style={liStyle2}>Mas Vendidos</li>
                         <li style={liStyle2}>Ofertas</li>
                         <li style={liStyle2}>Nuevos</li>
                     </ul>
                     <ul style={listStyle}>
-                        <li style={liStyle2}><b>Ayuda</b></li>
+                        <li style={liStyle}><b>Ayuda</b></li>
                         <li style={liStyle2}>Acerca de Nosotros</li>
                         <li style={liStyle2}>Politica de Envio</li>
                         <li style={liStyle2}>FAQ</li>

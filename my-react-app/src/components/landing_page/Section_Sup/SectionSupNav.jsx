@@ -13,7 +13,7 @@ export default function Section_Sup_Nav(){
         fontSize: '25px'
     }
     const barraStyle={
-        marginLeft: '250px',
+        marginLeft: '200px',
         marginTop: '200px'
     }
     const sectionStyle ={
