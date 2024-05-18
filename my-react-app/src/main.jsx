@@ -9,6 +9,9 @@ import{
 import ResultadosBusqueda from './routes/ResultadosBusqueda.jsx'
 import DetalleProducto from './routes/DetalleProducto.jsx'
 import { useNavigate } from 'react-router-dom';
+import DetalleOrden from './routes/DetalleOrden.jsx'
+
+
 
 const router = createBrowserRouter([
   {
@@ -22,6 +25,11 @@ const router = createBrowserRouter([
   {
     path: "/detalleProducto",
     element: <DetalleProducto />
+  }
+  ,
+  {
+    path: "/detalle_orden",
+    element: <DetalleOrden />
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
