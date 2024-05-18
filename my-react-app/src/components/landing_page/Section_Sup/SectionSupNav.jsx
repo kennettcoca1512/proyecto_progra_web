@@ -1,18 +1,30 @@
 export default function Section_Sup_Nav(){
     const navStyle = {
-        padding: '10px',
+        height: '30px',
+        padding: '20px',
         marginLeft:'50px',
-        paddingRight: '990px'
+        paddingRight: '1800px', 
+        fontSize: '25px'
     }
     const navStyle2 = {
-        padding: '10px',
-        marginLeft: '10px'
+        padding: '20px',
+        height: '75px',
+        marginLeft: '10px',
+        fontSize: '25px'
+    }
+    const barraStyle={
+        marginLeft: '250px',
+        marginTop: '200px'
+    }
+    const sectionStyle ={
+        marginTop: '60px',
+        marginBottom: '30px'
     }
     return (
         <>
-            <section>
-                <span>
-                    <input style={navStyle}  type="text" placeholder="Busca productos por nombre"></input>
+            <section style={sectionStyle}>
+                <span style={barraStyle}>
+                    <input style={navStyle}  type="text" placeholder="Busca productos por nombre "></input>
                     <input style={navStyle2} type="submit" value="Enviar"></input>
                 </span>
 

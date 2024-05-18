@@ -128,10 +128,11 @@ export default function Section_Sup(){
             "RAM" : "16GB"
         }
     ]
+
     return (
         <>
-            <Carrousel data={coleccion}/>
-            <Carrousel data={productos}/>
+            <Carrousel data={coleccion} useGrid={false}/>
+            <Carrousel data={productos} useGrid={true}/>
             <br></br>
             <hr></hr>
             <br></br>

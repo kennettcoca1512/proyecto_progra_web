@@ -14,35 +14,44 @@ export default function Header(){
         marginRight: '650px'
     }
     const liStyle={
-        marginRight: '30px'
+        marginRight: '30px',
+        fontSize: '30px'
     }
     const buttonStyle={
-        padding: '5px',
-        height: '35px',
-        marginTop: '15px'
+        padding: '10px',
+        height: '70px',
+        marginTop: '15px',
+        fontSize: '30px'
     }
     const pstyle={
         marginRight:'35px',
-        marginTop: '23px'
+        marginTop: '23px',
+        fontSize: '30px'
     }
     const hrStyle={
         width: 'maxWidth',
         marginLeft: '30px',
         marginBottom: '20px'
     }
+    const spanStyle={
+        display: 'flex',
+        marginLeft: '750px'
+    }
     const navigate = useNavigate()
     return(
         <>
             <header style={spanstyle}>
-                <h2>TOTAL HARDWARE</h2>
+                <h1>TOTAL HARDWARE</h1>
                 <ul style={listStyle}>
                     <li style={liStyle}>Nuevos</li>
                     <li style={liStyle}>Mas Vendidos</li>
                     <li style={liStyle}>Ofertas</li>
                 </ul>
                 <img></img>
+                <span style={spanStyle}>
                 <p style={pstyle}>Ayuda</p>
                 <button style={buttonStyle}>Mi Cuenta</button>
+                </span>   
             </header>
             <hr style={hrStyle}></hr>
         </>

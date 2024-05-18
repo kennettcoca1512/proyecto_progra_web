@@ -4,7 +4,7 @@ export default function Card(props){
         height: '400px',
         width: '350px',
         marginRight: '40px',
-        marginLeft: '45px',
+        marginLeft: '65px',
         marginTop: '50px',
         borderRadius: '20px'
     }
@@ -14,7 +14,9 @@ export default function Card(props){
         backgroundColor: 'white'
     }
     const nombreStyle = {
-        marginLeft: '55px'
+        marginLeft: '55px',
+        fontSize: '23px',
+        paddingRight: '155px'
     }
     const buttonStyle2 ={
         marginLeft: '180px',
