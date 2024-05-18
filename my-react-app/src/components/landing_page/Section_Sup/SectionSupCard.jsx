@@ -1,3 +1,4 @@
+import { Navigate, useNavigate } from "react-router-dom"
 export default function Card(props){
     const imageStyle = {
         height: '400px',
@@ -15,17 +16,20 @@ export default function Card(props){
     const nombreStyle = {
         marginLeft: '55px'
     }
-    const aStyle ={
-        marginLeft: '180px'
+    const buttonStyle2 ={
+        marginLeft: '180px',
+        borderRadius: '5px',
+        padding: '10px'
     }
+
     return<>
-        <span>
+        <div>
             <button style={buttonStyle}>
                 <img style={imageStyle} type="image" src={props.content}></img>
             </button>
             <h3 style={nombreStyle}>{props.nombre}</h3>
-            <a style={aStyle} href="">Learn More</a>
-        </span>
+            <button style={buttonStyle2}>Learn More</button>
+        </div>
         
     </>
     

@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom';
 export default function Header(){
     const spanstyle={
         display: 'flex',
@@ -29,10 +30,11 @@ export default function Header(){
         marginLeft: '30px',
         marginBottom: '20px'
     }
+    const navigate = useNavigate()
     return(
         <>
             <header style={spanstyle}>
-                <h2>PCERDA</h2>
+                <h2>TOTAL HARDWARE</h2>
                 <ul style={listStyle}>
                     <li style={liStyle}>Nuevos</li>
                     <li style={liStyle}>Mas Vendidos</li>

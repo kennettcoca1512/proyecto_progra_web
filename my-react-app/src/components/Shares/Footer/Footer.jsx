@@ -22,7 +22,7 @@ export default function Footer(){
         <>
             <footer style={genlistStyle}>
                     <ul style={listStyle}>
-                        <li style={liStyle}><b>PCERDA</b></li>
+                        <li style={liStyle}><b>TOTAL HARDWARE</b></li>
                         <li style={liStyle2}>2024</li>
                         <li style={liStyle2}>Privacy Terms</li>
                     </ul>

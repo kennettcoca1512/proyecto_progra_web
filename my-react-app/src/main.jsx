@@ -8,6 +8,7 @@ import{
 } from 'react-router-dom'
 import ResultadosBusqueda from './routes/ResultadosBusqueda.jsx'
 import DetalleProducto from './routes/DetalleProducto.jsx'
+import { useNavigate } from 'react-router-dom';
 
 const router = createBrowserRouter([
   {

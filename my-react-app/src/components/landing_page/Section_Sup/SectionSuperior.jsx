@@ -8,12 +8,12 @@ export default function Section_Sup(){
             "nombre": "Coleccion 1: Componentes de PC"
         },
         {
-            "id" : "1",
+            "id" : "2",
             "imagen" : "https://totemhardware.com.pe/wp-content/uploads/2023/08/itemth1pixis12.jpg",
             "nombre": "Coleccion 2: Teclados y Mouse"
         },
         {   
-            "id" : "1",
+            "id" : "3",
             "imagen" : "https://totemhardware.com.pe/wp-content/uploads/2023/08/itemth1oculus2.jpg",
             "nombre": "Coleccion 3: Consolas disponibles"
         }
@@ -128,12 +128,13 @@ export default function Section_Sup(){
             "RAM" : "16GB"
         }
     ]
-
     return (
         <>
             <Carrousel data={coleccion}/>
             <Carrousel data={productos}/>
+            <br></br>
             <hr></hr>
+            <br></br>
         </>
     )
 }
