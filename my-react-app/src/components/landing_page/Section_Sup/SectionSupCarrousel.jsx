@@ -8,7 +8,7 @@ export default function Carrousel(props){
         display: 'flex',
         justifyContent: 'space-evenly',
         marginRight: '70px'
-      };
+      }
     return <div style={styleToApply}>
         {
             props.data.map((obj)=>{
