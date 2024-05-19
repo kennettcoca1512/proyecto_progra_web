@@ -1,4 +1,4 @@
-import Carrousel2 from "./SectionSupCarrousel"
+import Carrousel2 from "./SectionInfCarrousel"
 import { coleccion2 } from "../../../data/coleccion2"
 import { productosnuevos } from "../../../data/productos2(nuevos)"
 export default function Section_Inf(){
