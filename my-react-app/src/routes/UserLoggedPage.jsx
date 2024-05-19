@@ -1,6 +1,6 @@
 import Header from "../components/Shares/Header/Header";
 import Footer from "../components/Shares/Footer/Footer";
-import Login from "../components/Login/Login";
+import UserLogged from "../components/UserLogged/UserLogged";
 
 export default function LoginPage(){
     
@@ -8,7 +8,7 @@ export default function LoginPage(){
     return (
         <>  
             <Header/>
-            <Login/>
+            <UserLogged/>
             <Footer/>
         </>
         
