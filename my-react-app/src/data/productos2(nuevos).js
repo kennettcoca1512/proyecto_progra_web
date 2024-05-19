@@ -1,6 +1,6 @@
-export const productosnuevos=[
+export const pr3oductosnuevos=[
     {
-        id : "1",
+        id : "13",
         imagen : "https://totemhardware.com.pe/wp-content/uploads/2024/01/BW-13.01.07.png",
         nombre : "PC Build #6788",
         procesador : "AMD RYZEN 7 5700X",
@@ -10,7 +10,7 @@ export const productosnuevos=[
         stock: 30
     },
     {
-        id: "2",
+        id: "14",
         imagen: "https://totemhardware.com.pe/wp-content/uploads/2024/01/BW-14.01.01.png",
         nombre: "PC Build #6784",
         procesador: "INTEL CORE I7 12700KF",
@@ -20,7 +20,7 @@ export const productosnuevos=[
         stock: 25
     },
     {
-        id: "3",
+        id: "15",
         imagen: "https://totemhardware.com.pe/wp-content/uploads/2024/01/BW-14.01.02.png",
         nombre: "PC Build 6787",
         procesador: "AMD RYZEN 7 5800X",
@@ -30,7 +30,7 @@ export const productosnuevos=[
         stock: 17
     },
     {
-        id: "4",
+        id: "16",
         imagen: "https://totemhardware.com.pe/wp-content/uploads/2024/01/BW-13.01.04.png",
         nombre: "PC Build #6785",
         procesador: "INTEL CORE I7 12700KF",
@@ -40,7 +40,7 @@ export const productosnuevos=[
         stock: 12
     },
     {
-        id: "5",
+        id: "17",
         imagen:"https://totemhardware.com.pe/wp-content/uploads/2024/01/BW-13.01.03.png",
         nombre: "PC Build #6767",
         procesador: "INTEL CORE I5 13600K",
@@ -50,7 +50,7 @@ export const productosnuevos=[
         stock: 6
     },
     {
-        id:"6",
+        id:"18",
         imagen: "https://totemhardware.com.pe/wp-content/uploads/2024/01/BW-13.01.02.png",
         nombre: "PC Build #6783",
         procesador: "INTEL CORE I5-12400F",

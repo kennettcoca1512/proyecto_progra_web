@@ -9,6 +9,7 @@ import{
 import ResultadosBusqueda from './routes/ResultadosBusqueda.jsx'
 import DetalleProducto from './routes/DetalleProducto.jsx'
 import { useNavigate } from 'react-router-dom';
+import { ItemIdProvider } from './context/itemIdContext.jsx'
 
 const router = createBrowserRouter([
   {
@@ -20,12 +21,14 @@ const router = createBrowserRouter([
     element: <ResultadosBusqueda />
   },
   {
-    path: "/detalleProducto",
+    path: "/detalleProducto/:itemId",
     element: <DetalleProducto />
   }
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router = {router}/>
+    <ItemIdProvider>
+        <RouterProvider router = {router}/>
+    </ItemIdProvider>
   </React.StrictMode>,
 )

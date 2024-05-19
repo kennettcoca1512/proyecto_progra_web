@@ -1,4 +1,5 @@
 import { Navigate, useNavigate } from "react-router-dom"
+import { useItemId } from "../../../context/itemIdContext"
 export default function Card2(props){
     const imageStyle = {
         height: '500px',
@@ -26,8 +27,11 @@ export default function Card2(props){
         padding: '10px'
     }
     const navigate = useNavigate()
-    function handleClick(){
-        navigate("/detalleProducto")
+    const {setItemIdContext} = useItemId();
+
+    function handleClick(itemId){
+        setItemIdContext(itemId);
+        navigate(`/detalleProducto/${itemId}`)
     }
 
     return<>
