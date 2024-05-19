@@ -1,4 +1,5 @@
-import Carrousel2 from "my-react-app/src/components/landing_page/Section_Inf/SectionSupCarrousel.jsx"
+import Carrousel2 from "./SectionSupCarrousel"
+
 import { coleccion2 } from "../../../data/coleccion2"
 import { productosnuevos } from "../../../data/productos2(nuevos)"
 export default function Section_Inf(){

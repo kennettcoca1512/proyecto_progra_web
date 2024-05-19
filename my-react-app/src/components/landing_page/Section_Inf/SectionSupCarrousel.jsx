@@ -13,7 +13,7 @@ export default function Carrousel2(props){
     return <div style={styleToApply}>
         {
             props.data.map((obj)=>{
-                return <Card2 key={obj.id} content={obj.imagen} nombre={obj.nombre}/>
+                return <Card2 key={obj.id} content={obj.imagen} nombre={obj.nombre} id={obj.id}/>
             })
         }
     </div>

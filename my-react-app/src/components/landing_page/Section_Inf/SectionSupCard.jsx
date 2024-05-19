@@ -31,6 +31,7 @@ export default function Card2(props){
 
     function handleClick(itemId){
         setItemIdContext(itemId);
+        console.log(itemId)
         navigate(`/detalleProducto/${itemId}`)
     }
 
@@ -40,7 +41,7 @@ export default function Card2(props){
                 <img style={imageStyle} type="image" src={props.content}></img>
             </button>
             <h3 style={nombreStyle}>{props.nombre}</h3>
-            <button onClick={handleClick} style={buttonStyle2}>Learn More</button>
+            <button onClick={() => handleClick(props.id)} style={buttonStyle2}>Learn More</button>
         </div>
         
     </>

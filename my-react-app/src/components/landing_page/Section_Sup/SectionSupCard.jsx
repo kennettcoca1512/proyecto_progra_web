@@ -38,7 +38,7 @@ export default function Card(props){
                 <img style={imageStyle} type="image" src={props.content}></img>
             </button>
             <h3 style={nombreStyle}>{props.nombre}</h3>
-            <button onClick={handleClick} style={buttonStyle2}>Learn More</button>
+            <button  onClick={() => handleClick(props.id)}  style={buttonStyle2}>Learn More</button>
         </div>
         
     </>

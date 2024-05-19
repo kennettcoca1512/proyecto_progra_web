@@ -1,4 +1,4 @@
-export const pr3oductosnuevos=[
+export const productosnuevos=[
     {
         id : "13",
         imagen : "https://totemhardware.com.pe/wp-content/uploads/2024/01/BW-13.01.07.png",
