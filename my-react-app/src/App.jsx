@@ -1,33 +1,30 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+import Header from './components/Header/Header'
+import Footer from './components/footer/footer'
+import {UserProvider, useUser} from './context/User'
+
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
+  
+  
+
+  const obj = useUser()
+
+  console.log(obj)
 
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <Header/>
+      <section>
+        <h1>Pagina principal</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum sequi
+           dolorum maiores, nesciunt quisquam nemo ipsam necessitatibus sit 
+           laborum, iusto quasi excepturi provident, vitae deserunt voluptatum 
+           dolores nobis amet. Veritatis temporibus repellendus sit mollitia.
+            Esse fuga dolores iusto totam nihil quam quis architecto pariatur. 
+            Corporis necessitatibus commodi consectetur quasi delectus.</p>
+      </section>
+      <Footer/>
     </>
   )
 }
