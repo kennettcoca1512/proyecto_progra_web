@@ -9,11 +9,15 @@ import { useState, createContext } from "react";
 
 
 const CartPage = () => {
-    const [total, setTotal] = useState(0);
 
-    function calculateSubtotal(subtotal) {
-       setTotal(total + subtotal);
-    }
+
+    const total = items.reduce((acc, item) => {
+        return acc + item.Precio
+    }, 0);
+
+
+
+    
 
     return (
         <>
@@ -24,8 +28,7 @@ const CartPage = () => {
                 items.map((item) => (
                     <ShoppingCart 
                     {...item} 
-                    key={item.Modelo}
-                    onSubtotalChange={calculateSubtotal} />))
+                    key={item.Modelo}/>))
                 }
                 <div className="cart-summary">
                     <p className="total-amount">Total: {total}</p>
@@ -40,6 +43,7 @@ const CartPage = () => {
         </>
     )
 }
+
 
 
 export default CartPage
