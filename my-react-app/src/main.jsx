@@ -2,6 +2,8 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import CartPage from './routes/ShoppingCart.jsx'
+import Checkoutpage from './routes/Checkout.jsx'
+import OrdenCompleta from './routes/OrderComplete.jsx'
 import {
   createBrowserRouter, RouterProvider
 } from 'react-router-dom'
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
   {
     path: "Carrito/",
     element: <CartPage/>,
+  },
+  {
+    path: "checkout/",
+    element: <Checkoutpage/>,
+  },
+  {
+    path: "OrderComplete/",
+    element: <OrdenCompleta/>,
   }
 ])
 

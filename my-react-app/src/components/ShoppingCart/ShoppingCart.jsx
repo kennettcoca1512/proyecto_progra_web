@@ -17,7 +17,7 @@ const ShoppingCart =(item)=>{
                 <div className="item-details">
                     <p>{item.Marca} {item.Modelo} {item.Procesador} {item.RAM} {item.Almacenamiento}</p>
                     <div className="actions">
-                        <a href="#" className="remove-item">Eliminar</a>
+                        <a href="#" className="remove-item">Eliminar |</a>
                         <a href="#" className="save-for-later"> Guardar para despues</a>
                     </div>
                 </div>

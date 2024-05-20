@@ -30,3 +30,8 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+.checkout-button a {
+  text-decoration: none;
+  color: white;
+}
