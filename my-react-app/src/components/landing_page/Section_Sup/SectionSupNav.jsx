@@ -1,18 +1,10 @@
 import { useState } from "react"
 import resultBusq from "../../ResultadosBusqueda/resultBusq"
 import { productosTotal } from "../../../data/productosTotal"
+import { useNavigate } from "react-router-dom"
 export default function Section_Sup_Nav(){
 
     const [busqueda, setBusqueda] = useState('')
-    const [resultados, setResultados] = useState(null)
-
-    const handleBuscar = () =>{
-        const resultados = productosTotal.filter(producto =>
-            producto.nombre.toLocaleUpperCase().includes(busqueda.toLocaleUpperCase())
-        )
-
-        setResultados(resultados)
-    }
     const navStyle = {
         height: '30px',
         padding: '20px',
@@ -38,13 +30,12 @@ export default function Section_Sup_Nav(){
         <>
             <section style={sectionStyle}>
                 <span style={barraStyle}>
-                    <input style={navStyle}  type="text" placeholder="Busca productos por nombre " value={busqueda} onChange={e => setBusqueda(e.target.value)}></input>
-                    <input style={navStyle2} type="submit" value="Enviar" onClick={handleBuscar}></input>
+                    <input style={navStyle}  type="text" placeholder="Busca productos por nombre "></input>
+                    <input style={navStyle2} type="submit" value="Enviar"></input>
                 </span>
 
 
             </section>
-            {resultados && <resultBusq resultados = {resultados}/>}
         </>
     )
 }
