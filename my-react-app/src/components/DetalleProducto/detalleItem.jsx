@@ -29,12 +29,12 @@ const ItemDetail = () => {
 
     const spanStyle ={
         display: 'flex',
-        justifyContent: 'space-evenly'
+        justifyContent: 'center',
         
     }
     const nombreStyle ={
         paddingLeft:'50px',
-        fontSize: '35px'
+        fontSize: '30px'
     }
     const sectionStyle = {
         marginTop: '100px'
@@ -47,7 +47,8 @@ const ItemDetail = () => {
         paddingBottom: '30px',
         paddingLeft: '250px',
         fontSize: '30px',
-        fontWeight: 'bolder'
+        fontWeight: 'bolder',
+        marginLeft: '200px'
     }
     const demasStyle={
         border: '2px solid black',
@@ -57,6 +58,7 @@ const ItemDetail = () => {
         paddingBottom: '300px',
         paddingLeft: '250px',
         marginRight: '30px',
+        marginLeft: '200px'
     }
     const precioStyle ={
         fontSize: '50px',
