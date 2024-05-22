@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom"
 export default function Section_Sup_Nav(){
 
     const [busqueda, setBusqueda] = useState('')
+    const navigate = useNavigate();
     const navStyle = {
         height: '30px',
         padding: '20px',
@@ -26,12 +27,15 @@ export default function Section_Sup_Nav(){
         marginTop: '60px',
         marginBottom: '30px'
     }
+    const Redirigir = () =>{
+        navigate('/resultadoBusqueda')
+    }
     return (
         <>
             <section style={sectionStyle}>
                 <span style={barraStyle}>
                     <input style={navStyle}  type="text" placeholder="Busca productos por nombre "></input>
-                    <input style={navStyle2} type="submit" value="Enviar"></input>
+                    <input style={navStyle2} type="submit" value="Enviar" onClick={Redirigir}></input>
                 </span>
 
 

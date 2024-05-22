@@ -8,7 +8,6 @@ export default function ResultadosBusqueda(){
         <>
             <Header />
             <Header_RB />
-            <resultBusq />
             <Footer />
         </>
     )
