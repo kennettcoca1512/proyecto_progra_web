@@ -8,7 +8,10 @@ export const productosTotal = [
         grafica : "NVIDIA RTX 3060 6GB",
         RAM : "16GB",
         precio: 6000,
-        stock: 32
+        stock: 32,
+        fecha: '2024-05-20',
+        vendido: 15,
+        oferta: 'no'
     },
     {
         id : 2,
@@ -19,7 +22,10 @@ export const productosTotal = [
         grafica : "GEFORCE RTX 3050 4GB",
         RAM : "8GB",
         precio: 4000,
-        stock: 18
+        stock: 18,
+        fecha: '2024-04-16',
+        vendido: 5,
+        oferta: 'no'
     },
     {
         id : 3,
@@ -30,7 +36,10 @@ export const productosTotal = [
         grafica : "NVIDIA RTX 4070 8GB",
         RAM : "16GB",
         precio: 4500,
-        stock: 9
+        stock: 9,
+        fecha: '2024-03-16',
+        vendido: 3,
+        oferta: 'no'
     },
     {
         id : 4,
@@ -41,7 +50,10 @@ export const productosTotal = [
         grafica : "NVIDIA GTX2060 6GB DDR6",
         RAM : "16GB",
         precio: 5000,
-        stock: 12
+        stock: 12,
+        fecha: '2023-12-28',
+        vendido: 5,
+        oferta: 'si'
     },
     {
         id : 5,
@@ -52,7 +64,10 @@ export const productosTotal = [
         grafica : "NVIDIA RTX4050 6GB DDR6",
         RAM : "16GB",
         precio: 4800,
-        stock: 21
+        stock: 21,
+        fecha: '2024-01-06',
+        vendido: 16,
+        oferta: 'no'
     },
     {
         id : 6,
@@ -63,7 +78,10 @@ export const productosTotal = [
         grafica : "NVIDIA® RTX 3060",
         RAM : "16GB", 
         precio: 4700,
-        stock: 17
+        stock: 17,
+        fecha: '2024-05-02',
+        vendido: 8,
+        oferta: 'no'
     },
     {
         id : 7,
@@ -74,7 +92,10 @@ export const productosTotal = [
         grafica : "NVIDIA® RTX 4070",
         RAM : "16GB",
         precio: 6300,
-        stock: 5
+        stock: 5,
+        fecha: '2024-03-21',
+        vendido: 7,
+        oferta: 'no'
     },
     {
         id : 8,
@@ -85,7 +106,10 @@ export const productosTotal = [
         grafica : "NVIDIA RTX 3050",
         RAM : "16GB",
         precio: 4000,
-        stock: 8
+        stock: 8,
+        fecha: '2023-10-20',
+        vendido: 9,
+        oferta: 'si'
     },
     {
         id : 9,
@@ -96,7 +120,10 @@ export const productosTotal = [
         grafica : "NVIDIA RTX 4070 8GB GDDR6",
         RAM : "32GB",
         precio:6000,
-        stock: 15
+        stock: 15,
+        fecha: '2024-02-13',
+        vendido: 23,
+        oferta: 'no'
     },
     {
         id : 10,
@@ -107,7 +134,10 @@ export const productosTotal = [
         grafica : "NVIDIA RTX 4060 (8GB GDDR6)",
         RAM : "16GB",
         precio: 4800,
-        stock: 13
+        stock: 13,
+        fecha: '2023-11-28',
+        vendido: 7,
+        oferta: 'no'
     },
     {
         id : 11,
@@ -118,7 +148,10 @@ export const productosTotal = [
         grafica : "NVIDIA RTX 4050 6GB GDDR6",
         RAM : "16GB",
         precio: 4600,
-        stock: 16
+        stock: 16,
+        fecha: '2024-05-01',
+        vendido: 4,
+        oferta: 'no'
     },
     {
         id : 12,
@@ -129,7 +162,10 @@ export const productosTotal = [
         grafica : "NVIDIA RTX 3060 6GB GDDR6",
         RAM : "16GB",
         precio: 4300,
-        stock: 6
+        stock: 6,
+        fecha: '2024-04-30',
+        vendido: 16,
+        oferta: 'si'
     },
     {
         id : 13,
@@ -139,7 +175,10 @@ export const productosTotal = [
         grafica : "NVIDIA RTX 4060 TI VENTUS 2X 8GB GDDR6",
         RAM : "16GB",
         precio: 5000,
-        stock: 30
+        stock: 30,
+        fecha: '2023-09-06',
+        vendido: 18,
+        oferta: 'no'
     },
     {
         id: 14,
@@ -149,7 +188,10 @@ export const productosTotal = [
         grafica: "NVIDIA RTX 4060 TI GAMING",
         RAM: "16GB",
         precio: 5000,
-        stock: 25
+        stock: 25,
+        fecha: '2024-03-21',
+        vendido: 19,
+        oferta: 'no'
     },
     {
         id: 15,
@@ -159,7 +201,10 @@ export const productosTotal = [
         grafica: "NVIDIA RTX 4060 GAMING X",
         RAM: "16GB",
         precio: 4000,
-        stock: 17
+        stock: 17,
+        fecha: '2023-11-25',
+        vendido: 8,
+        oferta: 'no'
     },
     {
         id: 16,
@@ -169,7 +214,10 @@ export const productosTotal = [
         grafica: "NVIDIA RTX 4060 GAMING X 8GB GDDR6",
         RAM: "32GB",
         precio: 5000,
-        stock: 12
+        stock: 12,
+        fecha: '2024-01-30',
+        vendido: 11,
+        oferta: 'si'
     },
     {
         id: 17,
@@ -179,7 +227,10 @@ export const productosTotal = [
         grafica: "NVIDIA RTX 4070 VENTUS 2X OC 12GB GDDR6X",
         RAM: "32GB",
         precio:6000,
-        stock: 6
+        stock: 6,
+        fecha: '2023-07-31',
+        vendido: 10,
+        oferta: 'no'
     },
     {
         id: 18,
@@ -189,7 +240,10 @@ export const productosTotal = [
         grafica: "NVIDIA RTX 4060 GAMING X 8GB GDDR6",
         RAM: "32GB",
         precio: 3000,
-        stock: 14
+        stock: 14,
+        fecha: '2024-02-27',
+        vendido: 12,
+        oferta: 'si'
     }
 
 ]
