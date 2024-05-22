@@ -5,6 +5,11 @@ export default function Section_Sup_Nav(){
 
     const [busqueda, setBusqueda] = useState('')
     const navigate = useNavigate();
+    useEffect(() => {
+        localStorage.setItem('busqueda', busqueda);
+        console.log(localStorage.getItem('busqueda'))
+    }, [busqueda]);
+    
     const navStyle = {
         height: '30px',
         padding: '20px',
