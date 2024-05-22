@@ -7,11 +7,18 @@ export default function Header_RB(){
     }
     const divStule ={
         display : 'flex',
-        marginBottom: '20px'
+        marginBottom: '20px',
+        marginLeft: '30px',
+        marginTop: '30px'
+    }
+    const buttonStyle ={
+        padding: '10px',
+        marginLeft: '20px'
     }
     const imgStyle ={
         height: '200px',
-        width: '200px'
+        width: '200px',
+        marginRight: '20px'
     }
     const selectStyle={
         height: '60px',
@@ -73,7 +80,7 @@ export default function Header_RB(){
                     <option value="nombre a-z">Nombre (A-Z)</option>
                     <option value="nombre z-a">Nombre (Z-A)</option>
                 </select>
-                <button onClick={handleShowClick}>Mostrar</button>
+                <button style={buttonStyle} onClick={handleShowClick}>Mostrar</button>
             </span>
             <br></br>
             <br></br>

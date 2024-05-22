@@ -1,10 +1,12 @@
 import { useState } from "react"
 import { productosTotal } from "../../../data/productosTotal"
 import { useNavigate } from "react-router-dom"
+import { useEffect } from "react"
 export default function Section_Sup_Nav(){
 
     const [busqueda, setBusqueda] = useState('')
     const navigate = useNavigate();
+
     useEffect(() => {
         localStorage.setItem('busqueda', busqueda);
         console.log(localStorage.getItem('busqueda'))
