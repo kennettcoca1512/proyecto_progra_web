@@ -5,6 +5,14 @@ export default function Header_RB(){
     const labelStyle={
         fontSize: '35px'
     }
+    const divStule ={
+        display : 'flex',
+        marginBottom: '20px'
+    }
+    const imgStyle ={
+        height: '200px',
+        width: '200px'
+    }
     const selectStyle={
         height: '60px',
         width: '220px',
@@ -75,8 +83,8 @@ export default function Header_RB(){
             <br></br>
             <span>
                 {ItemsFiltrados.map(item => (
-                    <span>
-                        <img src={item.imagen}></img>
+                    <span style={divStule}>
+                        <img style={imgStyle} src={item.imagen}></img>
                         <div>
                             <h2>{item.nombre}</h2>
                             <p>S/.{item.precio}</p>
