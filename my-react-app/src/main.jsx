@@ -53,10 +53,9 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     
     <UserProvider>
-      <RouterProvider router={router}/>
+      <ItemIdProvider>
+          <RouterProvider router = {router}/>
+      </ItemIdProvider>
     </UserProvider>
-    <ItemIdProvider>
-        <RouterProvider router = {router}/>
-    </ItemIdProvider>
   </React.StrictMode>,
 )
