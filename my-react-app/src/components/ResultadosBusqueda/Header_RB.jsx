@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { productosTotal } from "../../data/productosTotal"
 
 export default function Header_RB(){
@@ -68,6 +68,11 @@ export default function Header_RB(){
         setItemsFiltrados(filtrados);
 
     }
+
+
+    useEffect(() => {
+        handleShowClick();
+    }, [])
 
     return (
         <>
