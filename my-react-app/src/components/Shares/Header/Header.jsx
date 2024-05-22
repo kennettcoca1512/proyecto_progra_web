@@ -43,9 +43,9 @@ export default function Header(){
             <header style={spanstyle}>
                 <h1>TOTAL HARDWARE</h1>
                 <ul style={listStyle}>
-                    <li style={liStyle}>Nuevos</li>
-                    <li style={liStyle}>Mas Vendidos</li>
-                    <li style={liStyle}>Ofertas</li>
+                    <li style={liStyle}><a>Nuevos</a></li>
+                    <li style={liStyle}><a>Mas Vendidos</a></li>
+                    <li style={liStyle}><a>Ofertas</a></li>
                 </ul>
                 <img></img>
                 <span style={spanStyle}>
