@@ -5,7 +5,7 @@ import Pagination from '../Pagination/Pagination';
 import './ListOrdenes.css';
 import OrdenFila from './OrdenFila';
 
-const Orders = () => {
+const ListOrders = () => {
   const [currentPage, setCurrentPage] = useState(1);
   
   const [sortedOrders, setSortedOrders] = useState(orders);
@@ -66,4 +66,4 @@ const Orders = () => {
   );
 };
 
-export default Orders;
+export default ListOrders;

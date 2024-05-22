@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import userAccounts from '../../../data/Users/userAccounts';
-import Header from '../../Shares/Header/Header';
-import Footer from '../../Shares/Footer/Footer';
+import userAccounts from '../../data/userAccounts';
+import Header from '../Shares/Header/Header';
+import Footer from '../Shares/Footer/Footer';
 
 
 export default function Recuperacion() {

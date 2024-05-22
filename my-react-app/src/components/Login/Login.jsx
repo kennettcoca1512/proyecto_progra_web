@@ -2,8 +2,8 @@ import './Login.css'
 
 import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import userAccounts from '../../data/Users/userAccounts';
-import { useAuth } from './UserContext/UserContext.jsx';
+import userAccounts from '../../data/userAccounts';
+import { useAuthUser } from '../../context/UserContext/UserContext.jsx';
 
 
 export default function Login() {
@@ -14,7 +14,7 @@ export default function Login() {
     const [password, setPassword] = useState('');
     const [error,setError] = useState(false);
     const navigate = useNavigate();
-    const { login } = useAuth();
+    const { login } = useAuthUser();
 
 
     // function handleSubmit(){

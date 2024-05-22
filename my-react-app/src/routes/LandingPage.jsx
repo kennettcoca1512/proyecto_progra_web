@@ -30,7 +30,7 @@ export default function LandingPage(){
     return (
         <>
             <Header />
-            <Footer />
+            <Footer /> 
         </>
     )
     

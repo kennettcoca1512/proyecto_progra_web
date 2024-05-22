@@ -1,6 +1,6 @@
-import Header from "../../Shares/Header/Header";
-import Footer from "../../Shares/Footer/Footer";
-import userAccounts from "../../../data/Users/userAccounts";
+import Header from "../Shares/Header/Header";
+import Footer from "../Shares/Footer/Footer";
+import userAccounts from "../../data/userAccounts";
 
 import  { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
@@ -85,11 +85,6 @@ export default function Signin() {
                 <button className="submitButton" type="submit">Crear nueva cuenta</button>
                 <br />
                 <br />
-
-                <a  href="#">Olvidé mi contraseña</a>
-                <br />
-                <br />
-                <a  href="#">No tengo cuenta, deseo registrarme</a>
 
                 
             </form>

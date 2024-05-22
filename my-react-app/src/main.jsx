@@ -3,8 +3,10 @@ import ReactDOM from 'react-dom/client'
 import './index.css'
 import LandingPage from './routes/LandingPage.jsx'
 import LoginPage from './routes/LoginPage.jsx'
-import Signin from './components/Login/Signin/Signin.jsx'
-import { AuthProvider } from './components/Login/UserContext/UserContext.jsx'
+import SigninPage from './routes/SigninPage.jsx'
+import RecuperacionPage from './routes/RecuperacionPage.jsx'
+
+import { UserProvider } from './context/UserContext/UserContext.jsx'
 
 import UserLoggedPage from './routes/UserLoggedPage.jsx'
 
@@ -12,7 +14,6 @@ import{
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
-import Recuperacion from './components/Login/Recuperacion/Recuperacion.jsx'
 
 const router = createBrowserRouter([
   {
@@ -25,11 +26,11 @@ const router = createBrowserRouter([
   },
   {
     path:'/signin',
-    element: <Signin/>
+    element: <SigninPage/>
   },
   {
     path:'/recuperacion',
-    element: <Recuperacion/>
+    element: <RecuperacionPage/>
   },
   {
     path:'/account',
@@ -38,8 +39,8 @@ const router = createBrowserRouter([
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <AuthProvider>
+    <UserProvider>
       <RouterProvider router={router}/>
-    </AuthProvider>
+    </UserProvider>
   </React.StrictMode>,
 )
