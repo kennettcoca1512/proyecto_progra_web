@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
-//import { useAuthUser } from '../../context/UserContext/UserContext';
+import { useAuthUser } from '../../../context/UserContext/UserContext';
+
 export default function Header(){
     const spanstyle={
         display: 'flex',
@@ -40,7 +41,15 @@ export default function Header(){
         marginLeft: '750px'
     }
     const navigate = useNavigate()
-    //const user = useAuthUser // Replace 'UserContext' with the actual name of your user context
+    const {user} = useAuthUser() // Replace 'UserContext' with the actual name of your user context
+
+    const handleLoginClick = () => {
+        navigate('/login')
+    }
+
+    const handleAccountClick = () => {
+        navigate('/account')
+    }
 
     return(
         <>
@@ -54,16 +63,15 @@ export default function Header(){
                 <img></img>
                 <span style={spanStyle}>
                 <p style={pstyle}>Ayuda</p>
-                <button style={buttonStyle}>Mi Cuenta</button>
-                {/*user ? (
+                {user ? (
                             <>
-                                <button style={buttonStyle}>Mi Cuenta</button>
+                                <button style={buttonStyle} onClick={handleAccountClick}>Mi Cuenta</button>
                             </>
                         ) : (
                             <>
-                                <button style={buttonStyle}>Iniciar Sesion</button>
+                                <button style={buttonStyle} onClick={handleLoginClick}>Iniciar Sesion</button>
                             </>
-                        )*/}
+                        )}
                 </span>   
             </header>
             <hr style={hrStyle}></hr>

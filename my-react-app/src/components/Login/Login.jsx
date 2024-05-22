@@ -17,15 +17,6 @@ export default function Login() {
     const { login } = useAuthUser();
 
 
-    // function handleSubmit(){
-    //     if (email === 'user@mail.com' && password === '123456') {
-    //         navigate('/');
-    //     }
-    //     else if (email === '' || password === '') {
-    //         setError(true);
-    //     }
-    // }
-    
     function handleSubmit(e) {
         e.preventDefault();
         const user = userAccounts.find(user => user.email === email && user.password === password);
