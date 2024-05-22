@@ -33,7 +33,8 @@ export default function Section_Sup_Nav(){
         <>
             <section style={sectionStyle}>
                 <span style={barraStyle}>
-                    <input style={navStyle}  type="text" placeholder="Busca productos por nombre "></input>
+                    <input style={navStyle}  type="text" placeholder="Busca productos por nombre " value={busqueda}  onChange={(event) => setBusqueda(event.target.value)
+                        }></input>
                     <input style={navStyle2} type="submit" value="Enviar" onClick={Redirigir}></input>
                 </span>
 
