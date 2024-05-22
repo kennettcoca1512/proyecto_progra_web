@@ -2,9 +2,18 @@ import { useState } from "react"
 import resultBusq from "../../ResultadosBusqueda/resultBusq"
 import { productosTotal } from "../../../data/productosTotal"
 import { useNavigate } from "react-router-dom"
+import { useEffect } from "react"
 export default function Section_Sup_Nav(){
 
     const [busqueda, setBusqueda] = useState('')
+
+    useEffect(() => {
+        localStorage.setItem('busqueda', busqueda);
+        console.log(localStorage.getItem('busqueda'))
+    }, [busqueda]);
+    
+
+
     const navStyle = {
         height: '30px',
         padding: '20px',
@@ -30,7 +39,8 @@ export default function Section_Sup_Nav(){
         <>
             <section style={sectionStyle}>
                 <span style={barraStyle}>
-                    <input style={navStyle}  type="text" placeholder="Busca productos por nombre "></input>
+                    <input style={navStyle}  type="text" placeholder="Busca productos por nombre " value={busqueda}  onChange={(event) => setBusqueda(event.target.value)
+                        }></input>
                     <input style={navStyle2} type="submit" value="Enviar"></input>
                 </span>
 
