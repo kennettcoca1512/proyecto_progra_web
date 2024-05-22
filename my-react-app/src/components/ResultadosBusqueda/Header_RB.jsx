@@ -94,7 +94,7 @@ export default function Header_RB(){
                         <img style={imgStyle} src={item.imagen}></img>
                         <div>
                             <h2>{item.nombre}</h2>
-                            <p>S/.{item.precio}</p>
+                            <h3>S/.{item.precio}</h3>
                         </div>
                     </span>
                 ))}
