@@ -35,17 +35,18 @@ const ItemDetail = () => {
     }
     const nombreStyle ={
         paddingRight:'1200px',
-        fontSize: '15px'
+        fontSize: '15px',
+        marginLeft: '20px'
     }
     const sectionStyle = {
-        marginTop: '100px',
-        marginLeft: '150px'
+        marginTop: '50px',
+        marginLeft: '100px'
     }
     const dispStyle = {
         backgroundColor: '#f0f0f0',
         border: '2px solid black',
         width: '100px',
-        paddingTop: '20px',
+        paddingTop: '10px',
         paddingBottom: '20px',
         paddingLeft: '100px',
         paddingRight: '100px',
@@ -93,24 +94,21 @@ const ItemDetail = () => {
     }
     const sectionStyle2 ={
         border: '2px solid black',
-        width: '1000px',
-        height: '250px',
+        width: '500px',
+        height: '150px',
         paddingTop: '30px',
         paddingBottom: '150px',
-        paddingLeft: '600px',
-        paddingRight: '300px',
-        marginRight: '30px',
         marginLeft: '400px',
-        marginTop: '100px',
-        fontSize: '25px',
+        marginTop: '50px',
+        fontSize: '15px',
         backgroundColor: '#f0f0f0'
     }
     const listyle = {
-        fontWeight: 'bold',
+        fontSize: '15px',
         marginBottom: '30px'
     }
     const h2style ={
-        fontSize: '40px'
+        fontSize: '20px'
     }
     const hrStyle={
         marginLeft: '30px',
@@ -118,8 +116,9 @@ const ItemDetail = () => {
         marginBottom: '40px'
     }
     const imgStyle ={
-        height: '300px',
-        width: '300px'
+        height: '400px',
+        width: '400px',
+        marginTop: '30px'
     }
     return (
         <>
