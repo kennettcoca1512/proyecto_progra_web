@@ -79,6 +79,10 @@ export default function Header(){
         textDecoration: 'none',
         color: 'red'
     }
+    const aCarritoStyle ={
+        textDecoration:'none',
+        color: 'black'
+    }
 
     return(
         <>
@@ -91,6 +95,7 @@ export default function Header(){
                 </ul>
                 <img></img>
                 <span style={spanStyle}>
+                <p style={pstyle}><a style={aCarritoStyle} href="" onClick={() => navigate('/Carrito')}>Carrito</a></p>
                 <p style={pstyle}>Ayuda</p>
                 {user ? (
                             <>

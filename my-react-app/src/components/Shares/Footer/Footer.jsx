@@ -1,4 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 export default function Footer(){
+    const navigate = useNavigate();
+
     const listStyle = {
         display: 'flex',
         flexDirection:'column',
@@ -31,9 +35,9 @@ export default function Footer(){
                     </ul>
                     <ul style={listStyle}>
                         <li style={liStyle}><b>Cuenta</b></li>
-                        <li style={liStyle2}><a>Login</a></li>
-                        <li style={liStyle2}><a>Registro</a></li>
-                        <li style={liStyle2}><a>Carrito</a></li>
+                        <li style={liStyle2}><a className="aFooterStyle" href="" onClick={() => navigate('/login')}>Login</a></li>
+                        <li style={liStyle2}><a className="aFooterStyle" href="" onClick={() => navigate('/signin')}>Registro</a></li>
+                        <li style={liStyle2}><a className="aFooterStyle" href="" onClick={() => navigate('/Carrito')}>Carrito</a></li>
                     </ul>
                     <ul style={listStyle}>
                         <li style={liStyle}><b>Productos</b></li>
