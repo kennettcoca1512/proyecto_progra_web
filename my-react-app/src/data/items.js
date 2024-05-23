@@ -25,5 +25,14 @@ export const items = [
       Almacenamiento: "2TB SSD",
       Precio: 3500,
       imagen: "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/alienware-notebooks/m15-r7-non-touch-non-tobii/media_gallery/laptop-alienware-m15-r7-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&wid=5000&hei=5000&qlt=100,1&resMode=sharp2&size=5000,5000&chrss=full&imwidth=5000"
+    },
+    {
+      Marca: "Lenovo",
+      Modelo: "Legion 5i",
+      Procesador: "Inte Core i7",
+      RAM: "16gb",
+      Almacenamiento: "1TB SSD",
+      Precio: 2200,
+      imagen: "https://p2-ofp.static.pub//fes/cms/2024/02/13/5pi4rlc0jxroopjbnijh5071i67e7a018268.png"
     }
   ]

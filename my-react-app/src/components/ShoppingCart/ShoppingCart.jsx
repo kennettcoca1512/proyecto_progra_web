@@ -1,47 +1,46 @@
 import './ShoppingCart.css'
-import {useState } from 'react'
+import { useState, useEffect } from 'react'
+
+const ShoppingCart = ({ item, removeItemFromCart,increaseQuantity, decreaseQuantity, moveItemToSaved}) => {
 
 
+  const [subTotal, setSubTotal] = useState(0);
+  const calculateSubTotal = () => {
+      return item.Precio * item.quantity;
+  };
 
-const ShoppingCart =(item)=>{
-
-    
-    const [subTotal, setSubTotal] = useState(item.Precio);
-
+  useEffect(() => {
+    setSubTotal(calculateSubTotal());
+  }, [item.quantity]);
 
     return (
         <>
-        <section className="cart"> 
-            <div className="cart-item">
-                <img src={item.imagen} alt="" />
-                <div className="item-details">
-                    <p>{item.Marca} {item.Modelo} {item.Procesador} {item.RAM} {item.Almacenamiento}</p>
-                    <div className="actions">
-                        <a href="#" className="remove-item">Eliminar |</a>
-                        <a href="#" className="save-for-later"> Guardar para despues</a>
+            <section className="cart">
+                <div className="cart-item">
+                    <img src={item.imagen} alt="" />
+                    <div className="item-details">
+                        <p>{item.Marca} {item.Modelo} {item.Procesador} {item.RAM} {item.Almacenamiento}</p>
+                        <div className="actions">
+                            <button className='button-as-text' onClick={() => removeItemFromCart(item)}>Eliminar    |</button>
+                            <button className='button-as-text' onClick={() => moveItemToSaved(item)}>Guardar para despues</button>
+                        </div>
+                    </div>
+                    <div className="item-quantity">
+                        <label htmlFor="quantity-1">Cantidad</label>
+                        <div className="quantity-controls">
+                            <button onClick={() => decreaseQuantity(item)}>-</button>
+                            <span>{item.quantity}</span>
+                            <button onClick={() => increaseQuantity(item)}>+</button>
+                        </div>
+                    </div>
+                    <div className="item-price">
+                        <p>Precio: ${item.Precio}</p>
+                        <p>SubTotal: <span className="subTotal">${subTotal}</span></p>
                     </div>
                 </div>
-                <div className="item-quantity">
-                    <label for="quantity-1">Cantidad</label>
-                    <select className="quantity-select" id="quantity-1" onChange={(e) => {
-                        const newSubTotal = item.Precio * e.target.value;
-                        setSubTotal(newSubTotal);
-                    }}>
-                        <option value="1" selected>1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                </div>
-                <div className="item-price">
-                    <p>Precio: ${item.Precio}</p>
-                    <p>SubTotal: <span className="subTotal">${subTotal}</span></p>
-                </div>
-            </div>
-        </section>        
+            </section>
         </>
-    
-    )
+    );
 }
-
 
 export default ShoppingCart;
