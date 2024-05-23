@@ -41,7 +41,7 @@ export default function Header(){
         display: 'flex',
     }
     const navigate = useNavigate()
-    const {user} = useAuthUser() // Replace 'UserContext' with the actual name of your user context
+    const {user} = useAuthUser() 
     const handleLandingPageClick = () => {
         navigate('/')
     }
@@ -51,6 +51,9 @@ export default function Header(){
 
     const handleAccountClick = () => {
         navigate('/account')
+    }
+    const handleAdminClick = () => {
+        navigate('/DashboardAdmin')
     }
     const [tipoFiltro, setTipoFiltro] = useState(() => {
         return localStorage.getItem('tipoFiltro') || '';
@@ -101,6 +104,7 @@ export default function Header(){
                 {user ? (
                             <>
                                 <button style={buttonStyle} onClick={handleAccountClick}>Mi Cuenta</button>
+                                <button style={buttonStyle} onClick={handleAdminClick}>Admin</button>
                             </>
                         ) : (
                             <>

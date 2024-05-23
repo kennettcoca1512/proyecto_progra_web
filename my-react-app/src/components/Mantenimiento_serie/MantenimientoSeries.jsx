@@ -1,10 +1,8 @@
 import React from 'react';
-import './DetalleSerie.css'; // Asegúrate de crear este archivo CSS
-
+import './DetalleSerie.css';
 import Modal from './Modal';
 import { useState } from 'react';
 const MantenimientoS = () => {
-  // Obtener el primer elemento de dataseries como ejemplo
   
   const [showModal, setShowModal] = useState(false);
 
@@ -42,7 +40,6 @@ const MantenimientoS = () => {
         <button onClick={handleOpenModal}>+</button>
         <Modal show={showModal} onClose={handleCloseModal}>
         <p>Agregar producto</p>
-        {/* Aquí puedes agregar contenido adicional para el modal */}
         <div style={styleModal} >
             <input type="text" placeholder='buscar producto'/>
             <button>Buscar</button>

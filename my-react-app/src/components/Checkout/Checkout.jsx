@@ -90,7 +90,6 @@ const Checkout = () =>{
                         {metodoPago === 'qr' && (
                             <div>
                             <h3>Escanea este código QR para pagar</h3>
-                            {/* Aquí puedes agregar el componente o imagen del código QR */}
                             <img src={imagen} alt="Código QR" className="qrIMG"/>
                             </div>
                         )}

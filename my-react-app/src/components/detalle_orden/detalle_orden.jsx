@@ -37,21 +37,15 @@ export default function DetalleOrden() {
 
       
     useEffect(() => {
-        // Obtener el objeto de orden del almacenamiento local
         console.log(localStorage.getItem('order'));
         const storedOrder = localStorage.getItem('order');
-        // Convertir el JSON a un objeto JavaScript
-       // const parsedOrder = storedOrder ? JSON.parse(storedOrder) : nuevaorder;
        let parsedOrder;
         try {
         parsedOrder = JSON.parse(storedOrder);
         } catch (error) {
         console.error('Error parsing storedOrder:', error);
         }
-        // Establecer el objeto de orden en el estado local
         setOrder(parsedOrder);
-        // Limpieza: limpiar el almacenamiento local después de obtener los datos
-        //localStorage.removeItem('order');
 
 
     }, []);

@@ -21,5 +21,4 @@ export const UserProvider = ({ children }) => {
     );
 };
 
-// Hook personalizado para acceder al estado de autenticación en los componentes
 export const useAuthUser = () => useContext(UserContext);

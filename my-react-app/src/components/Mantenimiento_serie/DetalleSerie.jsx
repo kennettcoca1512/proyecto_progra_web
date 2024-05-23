@@ -1,36 +1,12 @@
-/*import React from 'react';
-import { useParams } from 'react-router-dom';
-import { dataseries } from '../../data/series';
-const SerieDetail = () => {
-  const { id } = useParams();
-  const serie = dataseries.find((serie) => serie.id === id);
 
-  if (!serie) {
-    return <div>Serie no encontrada</div>;
-  }
-
-  return (
-    <div>
-      <h2>{serie.marcaProd}</h2>
-      <img src={serie.imagen} alt={serie.marcaProd} style={{ width: '200px', height: '200px' }} />
-      <p>{serie.descrip}</p>
-      <p>Stock: {serie.stockProd}</p>
-      <p>Fecha de Registro: {serie.fechaRegistro}</p>
-      {/* Aquí puedes agregar más campos si es necesario }
-    </div>
-  );
-};
-
-export default SerieDetail;*/
 import React from 'react';
-import './DetalleSerie.css'; // Asegúrate de crear este archivo CSS
+import './DetalleSerie.css'; 
 import { dataseries } from '../../data/series';
 import MenuNavAdmin from '../MenuNavAdmin/MenuNavAdmin';
 import Modal from './Modal';
 import { useState } from 'react';
 import { useParams } from 'react-router-dom';
 const Detalle_serie = () => {
-  // Obtener el primer elemento de dataseries como ejemplo
   const { id } = useParams();
   const serie = dataseries.find((serie) => serie.id === id);
 
@@ -70,7 +46,6 @@ const Detalle_serie = () => {
         <button onClick={handleOpenModal}>+</button>
         <Modal show={showModal} onClose={handleCloseModal}>
         <p>Agregar producto</p>
-        {/* Aquí puedes agregar contenido adicional para el modal */}
         <div style={styleModal} >
             <input type="text" placeholder='buscar producto'/>
             <button>Buscar</button>
