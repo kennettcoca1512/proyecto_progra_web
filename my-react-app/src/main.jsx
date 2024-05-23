@@ -5,6 +5,10 @@ import LandingPage from './routes/LandingPage.jsx'
 import LoginPage from './routes/LoginPage.jsx'
 import SigninPage from './routes/SigninPage.jsx'
 import RecuperacionPage from './routes/RecuperacionPage.jsx'
+import DashboardAdmin from './routes/DashboardAdmin.jsx'
+import ListaProductosAdmin from './routes/ListaProductosAdmin.jsx'
+import DetallesProductoAdmin from './routes/DetallesProductoAdmin.jsx'
+import AgregarProductosAdmin from './routes/AgregarProductosAdmin.jsx'
 
 import { UserProvider } from './context/UserContext/UserContext.jsx'
 
@@ -47,7 +51,27 @@ const router = createBrowserRouter([
   {
     path: "/detalleProducto/:itemId",
     element: <DetalleProducto />
-  }
+  },
+  {
+    path: "/DashboardAdmin",
+    element: <DashboardAdmin />
+  },
+  {
+    path: "/ListaProductosAdmin",
+    element: <ListaProductosAdmin />
+  },
+  {
+    path: "/DetallesProductoAdmin",
+    element: <DetallesProductoAdmin />
+  },
+  {
+    path: "/AgregarProductosAdmin",
+    element: <AgregarProductosAdmin />
+  },
+  {
+    path: "/producto/:id",
+    element: <AgregarProductosAdmin />
+  },
 ])
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
