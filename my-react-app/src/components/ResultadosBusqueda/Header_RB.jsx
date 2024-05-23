@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { productosTotal } from "../../data/productosTotal"
 
 export default function Header_RB(){
+
     const labelStyle={
         fontSize: '35px'
     }
@@ -47,6 +48,28 @@ export default function Header_RB(){
         setSortCriteria(event.target.value);
     }
     
+    const handleShowFiltered = () =>{
+        let filtrados =  []
+        if (localStorage.getItem('tipoFiltro').toLowerCase() === 'nuevos'){
+            filtrados = productosTotal.filter(item =>
+                item.fecha.toLowerCase().includes('2024-05')
+            );
+        }
+        else if (localStorage.getItem('tipoFiltro').toLowerCase() === 'mas-vendidos'){
+            filtrados = productosTotal.filter(item =>
+                item.vendido > 20
+            );
+        }
+        else if(localStorage.getItem('tipoFiltro') === 'ofertas'){
+            filtrados = productosTotal.filter(item =>
+                item.oferta.toLowerCase().includes('si')
+            );
+        }
+
+        setItemsFiltrados(filtrados);
+        
+    }
+    
     const handleShowClick = () =>{
         let filtrados = productosTotal.filter(item =>
             item.nombre.toLowerCase().includes(localStorage.getItem('busqueda').toLowerCase()) ||
@@ -72,12 +95,15 @@ export default function Header_RB(){
 
     useEffect(() => {
         handleShowClick();
+        handleShowFiltered();
     }, [])
+
+ 
 
     return (
         <>
             <span style={spanStyle}>
-                <label style={labelStyle} for="opciones">Ordenar Por:</label>
+                <label style={labelStyle} htmlFor="opciones">Ordenar Por:</label>
                 <select style={selectStyle} value={sortCriteria} onChange={handleSortChange}>
                     <option value="Default">Default</option>
                     <option value="precio alto-bajo">Precio (de mayor a menor)</option>

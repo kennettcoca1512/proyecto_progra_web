@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 import { useAuthUser } from '../../../context/UserContext/UserContext';
+import { useEffect } from 'react';
 
 export default function Header(){
     const spanstyle={
@@ -50,15 +51,34 @@ export default function Header(){
     const handleAccountClick = () => {
         navigate('/account')
     }
+    const [tipoFiltro, setTipoFiltro] = useState('');
 
+    useEffect(() => {
+        localStorage.setItem('tipoFiltro', tipoFiltro);
+        console.log(localStorage.getItem('tipoFiltro'))
+    }, [tipoFiltro]);
+
+    const handleSectionsClick1 = () =>{
+        setTipoFiltro('nuevos')
+        navigate('/resultadoBusqueda')
+    }
+    const handleSectionsClick2 = () =>{
+        setTipoFiltro('mas-vendidos')
+        navigate('/resultadoBusqueda')
+    }
+    const handleSectionsClick3 = () =>{
+        setTipoFiltro('ofertas')
+        navigate('/resultadoBusqueda')
+    }
+    
     return(
         <>
             <header style={spanstyle}>
                 <h1>TOTAL HARDWARE</h1>
                 <ul style={listStyle}>
-                    <li style={liStyle}>Nuevos</li>
-                    <li style={liStyle}>Mas Vendidos</li>
-                    <li style={liStyle}>Ofertas</li>
+                    <li style={liStyle}><a onClick={handleSectionsClick1}>Nuevos</a></li>
+                    <li style={liStyle}><a onClick={handleSectionsClick2}>Mas Vendidos</a></li>
+                    <li style={liStyle}><a onClick={handleSectionsClick3}>Ofertas</a></li>
                 </ul>
                 <img></img>
                 <span style={spanStyle}>
