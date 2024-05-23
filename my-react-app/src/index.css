@@ -35,3 +35,11 @@
   text-decoration: none;
   color: white;
 }
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+}
+body {
+  margin-left: 0%;
+  display: flex;
+  width: max-content;
+}
