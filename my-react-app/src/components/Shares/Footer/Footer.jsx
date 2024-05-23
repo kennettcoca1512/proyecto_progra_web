@@ -31,9 +31,9 @@ export default function Footer(){
                     </ul>
                     <ul style={listStyle}>
                         <li style={liStyle}><b>Cuenta</b></li>
-                        <li style={liStyle2}>Login</li>
-                        <li style={liStyle2}>Registro</li>
-                        <li style={liStyle2}>Carrito</li>
+                        <li style={liStyle2}><a>Login</a></li>
+                        <li style={liStyle2}><a>Registro</a></li>
+                        <li style={liStyle2}><a>Carrito</a></li>
                     </ul>
                     <ul style={listStyle}>
                         <li style={liStyle}><b>Productos</b></li>
