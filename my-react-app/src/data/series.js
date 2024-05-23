@@ -1,22 +1,38 @@
-export const dataseries= [
+export const dataseries = [
     {
         id: "1",
         imagen: "https://totemhardware.com.pe/wp-content/uploads/2023/12/itemth16ROGLA4070-1.jpg",
         marcaProd: "ASUS",
-        descrip:"Colección de equipos disponibles en tienda de la marca ASUS",
+        descrip: "Colección de equipos disponibles en tienda de la marca ASUS",
         stockProd: "36",
         fechaRegistro: new Date().toLocaleDateString(),
-        
-        
-},
+        laptopInfo: [
+            {
+                id: "1",
+                description: "ASUS Laptop Model 1 - Detailed information"
+            },
+            {
+                id: "2",
+                description: "ASUS Laptop Model 2 - Detailed information"
+            }
+        ]
+    },
     {
         id: "2",
-        imagen: "https://totemhardware.com.pe/wp-content/uploads/2023/12/itemth11ROGLA4070-2.jpg",       
+        imagen: "https://totemhardware.com.pe/wp-content/uploads/2023/12/itemth11ROGLA4070-2.jpg",
         marcaProd: "LENOVO",
         descrip: "Colección de equipos disponibles en tienda de la marca LENOVO",
         stockProd: "14",
         fechaRegistro: new Date().toLocaleDateString(),
-      
+        laptopInfo: [{
+            id: "1",
+            description: "LENOVO Laptop Model 1 - Detailed information"
+        },
+        {
+            id: "2",
+            description: "LENOVO Laptop Model 2 - Detailed information"
+        }
+        ]
     },
     {
         id: "3",
@@ -29,10 +45,18 @@ export const dataseries= [
         descrip: "Colección de equipos disponibles en tienda de la marca MSI",
         stockProd: "32",
         fechaRegistro: new Date().toLocaleDateString(),
-        estado: '32'
+        estado: '32',
+        laptopInfo: [
+            {
+                id: "1",
+                description: "MSI Laptop Model 1 - Detailed information"
+            },
+            {
+                id: "2",
+                description: "MSI Laptop Model 2 - Detailed information"
+            }
+        ]
     },
- 
-   
     {
         id: "6",
         imagen: "https://totemhardware.com.pe/wp-content/uploads/2023/12/itemth1ROGLA4070.jpg",
@@ -44,7 +68,15 @@ export const dataseries= [
         descrip: "Colección de equipos disponibles en tienda de la marca ACER",
         stockProd: "24",
         fechaRegistro: new Date().toLocaleDateString(),
-        estado: '12'
-    },
-    
+        estado: '12',
+        laptopInfo: [{
+            id: "1",
+            description: "ACER Laptop Model 1 - Detailed information"
+        },
+        {
+            id: "2",
+            description: "ACER Laptop Model 2 - Detailed information"
+        }
+        ]
+    }
 ];

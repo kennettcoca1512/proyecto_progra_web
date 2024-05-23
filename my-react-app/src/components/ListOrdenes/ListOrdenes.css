@@ -15,7 +15,10 @@
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
   }
-  
+  .order-item {
+    width: 100%;
+  }
+
   .order-header {
     font-weight: bold;
     background-color: #eee;

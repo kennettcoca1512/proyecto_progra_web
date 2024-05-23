@@ -22,6 +22,7 @@ export default function Login() {
         const user = userAccounts.find(user => user.email === email && user.password === password);
         if (user) {
           login(user); 
+          localStorage.setItem('user', JSON.stringify(user));
           navigate('/');
         } else {
           setError(true);

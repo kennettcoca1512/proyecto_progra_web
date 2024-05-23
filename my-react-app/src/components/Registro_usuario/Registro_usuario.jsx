@@ -37,7 +37,7 @@ export default function RegistroUsuario() {
 
     return (
         <>
-            {user ? (
+            {user ? (/*
                 <>
                     <section className="todo">
                         <section className="conjunto">
@@ -61,7 +61,16 @@ export default function RegistroUsuario() {
                             </article>
                         </section>
                     </section>
-                </>
+                </>*/
+                <article className="Datos">
+                                <div><b>Datos de Registro</b></div><br />
+                                <article className="dat">
+                                    <input type="text" id="username" className="CajasUs" placeholder='Nombre' defaultValue={user.username}></input><br /><br />
+                                    <input type="text" id="userlastname" className="CajasUs" placeholder='Apellido' defaultValue={user.lastname}></input><br /><br />
+                                    <input type="text" id="email" className="CajasUs" placeholder='Correo' defaultValue={user.email}></input><br /><br /><br />
+                                    <button id="botonact" onClick={handleUpdate}>Actualizar</button>
+                                </article>
+                            </article>
             ) : (
                 <p>No hay detalles de usuario disponibles</p>
             )}

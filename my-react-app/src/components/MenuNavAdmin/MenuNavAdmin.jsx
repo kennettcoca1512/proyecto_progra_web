@@ -9,11 +9,11 @@ const MenuNavAdmin = () => {
                 <h1 style={styles.title}>Admin</h1>
                 <div style={styles.div}>
                     <button style={styles.button} type="button" onClick={() => navigate('/DashboardAdmin')}>Dashboard</button>
-                    <button style={styles.button} type="button" onClick={() => navigate('/usuarios')}>Usuarios registrados</button>
+                    <button style={styles.button} type="button" onClick={() => navigate('/UsuariosRegistrados')}>Usuarios registrados</button>
                     <button style={styles.button} type="button" onClick={() => navigate('/ListaProductosAdmin')}>Productos</button>
-                    <button style={styles.button} type="button" onClick={() => navigate('/ordenes')}>Órdenes</button>
-                    <button style={styles.button} type="button" onClick={() => navigate('/mas-vendidos')}>Productos más vendidos</button>
-                    <button style={styles.button} type="button" onClick={() => navigate('/series')}>Series</button>
+                    <button style={styles.button} type="button" onClick={() => navigate('/ListadoOrdenes')}>Órdenes</button>
+                    
+                    <button style={styles.button} type="button" onClick={() => navigate('/listado_series')}>Series</button>
                 </div>
             </section>
         </>

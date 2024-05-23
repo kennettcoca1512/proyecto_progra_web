@@ -38,13 +38,20 @@ export default function DetalleOrden() {
       
     useEffect(() => {
         // Obtener el objeto de orden del almacenamiento local
+        console.log(localStorage.getItem('order'));
         const storedOrder = localStorage.getItem('order');
         // Convertir el JSON a un objeto JavaScript
-        const parsedOrder = storedOrder ? JSON.parse(storedOrder) : nuevaorder;
+       // const parsedOrder = storedOrder ? JSON.parse(storedOrder) : nuevaorder;
+       let parsedOrder;
+        try {
+        parsedOrder = JSON.parse(storedOrder);
+        } catch (error) {
+        console.error('Error parsing storedOrder:', error);
+        }
         // Establecer el objeto de orden en el estado local
         setOrder(parsedOrder);
         // Limpieza: limpiar el almacenamiento local después de obtener los datos
-        localStorage.removeItem('order');
+        //localStorage.removeItem('order');
 
 
     }, []);
@@ -57,6 +64,7 @@ export default function DetalleOrden() {
         if (qr =="QR"){
             
             setdisplayPAGOQR("flex")
+            setdisplayPagoTarjeta("none")
         }
 
         else if (tarjeta !=="Tarjeta"){
@@ -77,6 +85,7 @@ export default function DetalleOrden() {
             if (tarjeta =="Tarjeta"){
                 
                 setdisplayPagoTarjeta("Flex")
+                setdisplayPAGOQR("none")
             }
 
             else if (qr !==""){
@@ -111,7 +120,7 @@ export default function DetalleOrden() {
             <article>
                 <div>
                     <b>Pago</b><br></br>
-                    <input type="radio" id="PAGOQR" name="metpago" value="QR"  onClick={TIPODEPAGO}/> <span>Pago con código QR</span><br></br>
+                    <input type="radio" id="PAGOQR" name="metpago" value="QR"  onClick={TIPODEPAGO} /> <span>Pago con código QR</span><br></br>
                     <PagoQR display={displayPagoQR}/>
                     <input type="radio" id="PAGOTARJETA" name="metpago" value="Tarjeta" onClick={TIPODEPAGO2}/> <span>Pago con tarjeta de crédito</span><br></br> <br></br>
                     <PagoTarjeta display={displayPagoTarjeta}/>
@@ -135,7 +144,7 @@ export default function DetalleOrden() {
                     
                 </div>
 
-                <pan>{order.items} S/{order.precioTotal}.00</pan>
+                <span>{order.items} S/{order.precioTotal}.00</span>
             </article>
 
             <article>

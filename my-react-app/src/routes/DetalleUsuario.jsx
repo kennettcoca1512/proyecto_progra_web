@@ -1,9 +1,12 @@
 import React from 'react';
-import Header from "../components/HeaderUO/HeaderLO"
-import Footer from "../components/FooterUO/Footer"
+//import Header from "../components/HeaderUO/HeaderLO"
+//import Footer from "../components/FooterUO/Footer"
+import Header from '../components/Shares/Header/Header';
+import Footer from '../components/Shares/Footer/Footer';
 import Aside from "../components/Usuarios_Orden/AsideUO/Aside"
 import { useItemId } from '../context/itemIdContext'
 import {Usuarios} from "../data/Usuarios";
+import MenuNavAdmin from '../components/MenuNavAdmin/MenuNavAdmin';
 
 const DetalleUsuario = () =>{
     const DO = {
@@ -72,7 +75,7 @@ const DetalleUsuario = () =>{
     <div style={DO}>
        <Header />
             <div style={minDO}>
-                <Aside />
+                <MenuNavAdmin />
                 <div style={contentStyleDO}> 
                 <section style={hStyle}>
                     <h2 style={h2Style}>Detalle de Usuario Registrado</h2>

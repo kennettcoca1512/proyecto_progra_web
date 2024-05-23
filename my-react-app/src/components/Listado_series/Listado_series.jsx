@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { dataseries } from '../../data/series';
 import './Listado_series.css';
+import MenuNavAdmin from '../MenuNavAdmin/MenuNavAdmin';
 
 const ListadoSeries = () => {
     const navigate = useNavigate();
@@ -40,10 +41,10 @@ const ListadoSeries = () => {
     };
 
     const handleView = (id) => {
-        navigate(`/serie/${id}`);
+        navigate(`/detalle_serie/${id}`);
     };
 
-    return (
+    return (/*
         <section class="ListadoSeries">
             <article class="Admin">
                 <div id="Admindiv">Admin</div>
@@ -109,8 +110,62 @@ const ListadoSeries = () => {
                 </table>
             </div>
             </section>
+            </section>*/
+            <section class="ListadoSeries">
+            <MenuNavAdmin/>
+        <section  style={styles.section}>
+            <div style={styles.tituloPagina}>
+                <h3 id ="tituloseries" style={styles.titulo}>Series</h3>
+                <button id="btndetalleserie" style={styles.BotonTitulo} type="button" onClick={() => navigate('/mantenimiento_series')}>Mantenimiento  Serie</button>
+            </div>
+            <div style={styles.searchContainer}>
+                <input
+                    type="text"
+                    id="searchBar"
+                    placeholder="Buscar por id, serie o detalle..."
+                    style={styles.searchBar}
+                    value={searchTerm}
+                    onChange={(e) => setSearchTerm(e.target.value)}
+                />
+                
+            </div>
+            
+            
+            
+            
+            <div>
+                <table id="productTable" style={styles.tabla}>
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Nombre</th>
+                            <th>Descripción</th>
+                            <th>Fecha de registro</th>
+                            <th>Número de series</th>
+                            
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {series.map((serie) => (
+                            <tr key={serie.id}>
+                                <td>{serie.id}</td>
+                                <td style={styles.tablamarcaProd}><b>{serie.marcaProd}</b> </td>
+                                <td style ={styles.tabladescr}>{serie.descrip}</td>
+                                <td>{serie.fechaRegistro}</td>
+                                <td>{serie.stockProd}</td>
+                                
+                                <td>
+                                    <button type="button" style={styles.BotonAccion} onClick={() => handleView(serie.id)}>VER</button>
+                                    
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
             </section>
-        
+            </section>
     );
 }
 

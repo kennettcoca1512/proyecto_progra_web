@@ -46,7 +46,7 @@ export default function CambioPassword() {
     return (
         <>
             {user ? (
-                <>
+                /*<>
                     <section className="todo">
                         <section className="conjunto">
                             <article className="elementos">
@@ -69,7 +69,18 @@ export default function CambioPassword() {
                             </article>
                         </section>
                     </section>
-                </>
+                    </>*/
+
+                    <article className="Datos">
+                                <div><b>Cambiar Password</b></div><br />
+                                <article className="dat">
+                                    <input type="password" id="actualpassword" className="CajasUs" placeholder='Actual'></input><br /><br />
+                                    <input type="password" id="newpassword" className="CajasUs" placeholder='Nuevo'></input><br /><br />
+                                    <input type="password" id="againpassword" className="CajasUs" placeholder='Repetir'></input><br /><br /><br />
+                                    <button id="botonact" onClick={handleUpdate}>Cambiar</button>
+                                </article>
+                            </article>
+                
             ) : (
                 <p>No hay detalles de usuario disponibles</p>
             )}

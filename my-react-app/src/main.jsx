@@ -25,17 +25,21 @@ import{
 import UsuariosRegistrados from "./routes/UsuariosRegistrados.jsx";
 import DetalleUsuario from './routes/DetalleUsuario.jsx';
 import ListadoOrdenes from './routes/ListadoOrdenes.jsx';
-import DetalleOrden from './routes/DetalleOrden.jsx';
+//import DetalleOrden from './routes/DetalleOrden.jsx';
+import DetalleOrdenAdmin from './routes/DetalleOrdenAdmin.jsx'
 import { ItemIdProvider } from './context/itemIdContext.jsx'
 import ResultadosBusqueda from './routes/ResultadosBusqueda.jsx'
 import DetalleProducto from './routes/DetalleProducto.jsx'
 import { useNavigate } from 'react-router-dom';
 //import DetalleOrden from './routes/DetalleOrden.jsx';
+//import DetalleOrden from './components/detalle_orden/detalle_orden.jsx';
 import RegistroUsuario from './routes/RegistroUsuario.jsx';
 import CambioPassword from './routes/CambioPassword.jsx';
 import ListadoSeries from './routes/ListadoSeries.jsx';
-import MantenimientoSerie from './routes/MantenimientoSerie.jsx'
+import MantenimientoSerie from './routes/MantenimientoSerie.jsx';
+import DetalleOrdenUser from './routes/DetalleOrdenUser.jsx'
 
+import DetalleSerie from './routes/DetalleSerie.jsx'
 
 const router = createBrowserRouter([
   {
@@ -112,12 +116,12 @@ const router = createBrowserRouter([
   },
   {
     path:"/DetalleOrden/:itemid",
-    element: <DetalleOrden />,
+    element: <DetalleOrdenAdmin />,
   }
   ,
   {
     path: "/detalle_orden",
-    element: <DetalleOrden />
+    element: <DetalleOrdenUser />
   }
   ,
   {
@@ -138,6 +142,10 @@ const router = createBrowserRouter([
   {
     path: "/mantenimiento_series",
     element: <MantenimientoSerie/>
+  },
+  {
+    path: "/detalle_serie/:id",
+    element: <DetalleSerie/>
   }
   
 ])

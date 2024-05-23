@@ -4,7 +4,7 @@ import Listado_series from "../components/Listado_series/Listado_series";
 
 export default function ListadoSeries(){
     return (
-        <>s
+        <>
             <Header />           
             <Listado_series/>
             <Footer />              

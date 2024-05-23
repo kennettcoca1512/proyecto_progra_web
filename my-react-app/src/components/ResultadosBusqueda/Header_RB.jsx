@@ -94,8 +94,7 @@ export default function Header_RB(){
 
 
     useEffect(() => {
-        handleShowClick();
-        handleShowFiltered();
+        handleShowClick();  
     }, [])
 
  

@@ -3,8 +3,8 @@ export default function OrdenFila(order){
     const navigate = useNavigate();
     function verDetalle () {
         localStorage.setItem('order', JSON.stringify(order));
-        console.log(order);
-        navigate('/ruta-de-detalles');
+        console.log(localStorage.getItem('order'));
+        navigate('/detalle_orden');
     };
 
 

@@ -42,7 +42,9 @@ export default function Header(){
     }
     const navigate = useNavigate()
     const {user} = useAuthUser() // Replace 'UserContext' with the actual name of your user context
-
+    const handleLandingPageClick = () => {
+        navigate('/')
+    }
     const handleLoginClick = () => {
         navigate('/login')
     }
@@ -72,10 +74,16 @@ export default function Header(){
     const h1Style={
         fontSize: '20px'
     }
+
+    const h1ClickStyle ={
+        textDecoration: 'none',
+        color: 'red'
+    }
+
     return(
         <>
             <header style={spanstyle}>
-                <h1 style={h1Style}>TOTAL HARDWARE</h1>
+                <h1 style={h1Style} ><a href='' onClick={handleLandingPageClick} style={h1ClickStyle}>TOTAL HARDWARE</a></h1>
                 <ul style={listStyle}>
                     <li style={liStyle}><a onClick={handleSectionsClick1}>Nuevos</a></li>
                     <li style={liStyle}><a onClick={handleSectionsClick2}>Mas Vendidos</a></li>

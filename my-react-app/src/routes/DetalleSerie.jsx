@@ -1,15 +1,15 @@
 import Header from "../components/Shares/Header/Header"
 import Footer from "../components/Shares/Footer/Footer"
 import MenuNavAdmin from '../components/MenuNavAdmin/MenuNavAdmin'
+import Detalle_serie from "../components/Mantenimiento_serie/DetalleSerie";
 
-import MantenimientoS from "../components/Mantenimiento_serie/MantenimientoSeries";
-function MantenimientoSerie() {
+function DetalleSerie() {
   return (
     <>
       <Header />
       <section style={styles.section}>
         <MenuNavAdmin />
-        <MantenimientoS />
+        <Detalle_serie />
       </section>
       <Footer />
     </>
@@ -23,4 +23,4 @@ const styles = {
 }
 
 
-export default MantenimientoSerie;
+export default DetalleSerie;

@@ -1,12 +1,10 @@
-//import Header from "../components/HeaderUO/HeaderLO"
-//import Footer from "../components/FooterUO/Footer"
 import Header from "../components/Shares/Header/Header"
 import Footer from "../components/Shares/Footer/Footer"
 import MetodoEnvio from "../components/Usuarios_Orden/MetodoEnvio/ME"
 import { useItemId } from '../context/itemIdContext'
 import {Usuarios} from "../data/Usuarios"
 
-export default function DetalleOrden(){
+export default function DetalleOrdenAdmin(){
     const DO = {
         display: 'flex',
         flexDirection: 'column',
