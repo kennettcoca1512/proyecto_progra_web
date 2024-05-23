@@ -13,25 +13,26 @@ export default function Section_Sup_Nav(){
     }, [busqueda]);
     
     const navStyle = {
-        height: '30px',
-        padding: '20px',
-        marginLeft:'50px',
-        paddingRight: '1800px', 
-        fontSize: '25px'
+        height: '20px',
+        padding: '10px',
+        marginLeft:'0px',
+        paddingRight: '700px', 
+        fontSize: '15px'
     }
     const navStyle2 = {
-        padding: '20px',
-        height: '75px',
+        padding: '10px',
+        height: '40px',
         marginLeft: '10px',
-        fontSize: '25px'
+        fontSize: '15px'
     }
     const barraStyle={
         marginLeft: '200px',
-        marginTop: '200px'
+        marginTop: '100px'
     }
     const sectionStyle ={
         marginTop: '60px',
-        marginBottom: '30px'
+        marginBottom: '30px',
+        marginRight: '1400px'
     }
     const Redirigir = () =>{
         navigate('/resultadoBusqueda')
@@ -44,8 +45,6 @@ export default function Section_Sup_Nav(){
                         }></input>
                     <input style={navStyle2} type="submit" value="Enviar" onClick={Redirigir}></input>
                 </span>
-
-
             </section>
         </>
     )

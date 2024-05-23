@@ -4,23 +4,22 @@ export default function Footer(){
         flexDirection:'column',
         whiteSpace: 'nowrap',
         listStyleType: 'none',
-        margin: '3rem',
-        paddingBottom: '40px'
+        margin: '2rem',
+        paddingBottom: '40px',
+        marginLeft: '120px'
     }
     const genlistStyle={
         display: 'flex',
         backgroundColor: 'grey',
-        PaddingLeft:'50%'
+        maxWidth: '1400px'
     }
     const liStyle={
-        marginBottom:'30px',
-        fontSize:'30px',
-        marginLeft: '150px'
+        marginBottom:'20px',
+        fontSize:'15px'
     }
     const liStyle2={
-        marginBottom: '25px',
-        fontSize: '23px',
-        marginLeft: '150px'
+        marginBottom: '15px',
+        fontSize: '13px'
     }
     return(
         <>

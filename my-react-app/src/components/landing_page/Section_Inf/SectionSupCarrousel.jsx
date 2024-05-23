@@ -2,13 +2,13 @@ import Card2 from "./SectionSupCard"
 export default function Carrousel2(props){
     const styleToApply = props.useGrid ? {
         display: 'grid',
-        gridTemplateColumns: 'repeat(3, 700px)',
-        gridTemplateRows: 'repeat(2, 700px)',
-        marginLeft: '250px'
+        gridTemplateColumns: 'repeat(3, 350px)',
+        gridTemplateRows: 'repeat(2, 350px)',
+        marginLeft: '130px'
       } : {
         display: 'flex',
-        justifyContent: 'space-evenly',
-        marginRight: '100px'
+        justifyContent: 'flex-Start',
+        marginLeft: '50px'
       }
     return <div style={styleToApply}>
         {

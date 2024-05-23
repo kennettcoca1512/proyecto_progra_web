@@ -13,33 +13,32 @@ export default function Header(){
         display: 'flex',
         whiteSpace: 'nowrap',
         listStyleType: 'none',
-        marginTop: '24px',
+        marginTop: '20px',
         marginLeft: '40px',
-        marginRight: '650px'
+        marginRight: '550px'
     }
     const liStyle={
         marginRight: '30px',
-        fontSize: '30px'
+        fontSize: '15px'
     }
     const buttonStyle={
-        padding: '10px',
-        height: '70px',
+        padding: '5px',
+        height: '40px',
         marginTop: '15px',
-        fontSize: '30px'
+        fontSize: '15px'
     }
     const pstyle={
-        marginRight:'35px',
+        marginRight:'20px',
         marginTop: '23px',
-        fontSize: '30px'
+        fontSize: '15px'
     }
     const hrStyle={
-        width: 'maxWidth',
         marginLeft: '30px',
-        marginBottom: '20px'
+        width: '1300px',
+        marginBottom: '40px'
     }
     const spanStyle={
         display: 'flex',
-        marginLeft: '750px'
     }
     const navigate = useNavigate()
     const {user} = useAuthUser() // Replace 'UserContext' with the actual name of your user context
@@ -70,11 +69,13 @@ export default function Header(){
         setTipoFiltro('ofertas')
         navigate('/resultadoBusqueda')
     }
-    
+    const h1Style={
+        fontSize: '20px'
+    }
     return(
         <>
             <header style={spanstyle}>
-                <h1>TOTAL HARDWARE</h1>
+                <h1 style={h1Style}>TOTAL HARDWARE</h1>
                 <ul style={listStyle}>
                     <li style={liStyle}><a onClick={handleSectionsClick1}>Nuevos</a></li>
                     <li style={liStyle}><a onClick={handleSectionsClick2}>Mas Vendidos</a></li>

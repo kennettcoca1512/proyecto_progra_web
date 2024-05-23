@@ -2,9 +2,9 @@ import { Navigate, useNavigate } from "react-router-dom"
 import { useItemId } from "../../../context/itemIdContext"
 export default function Card(props){
     const imageStyle = {
-        height: '400px',
-        width: '350px',
-        marginRight: '40px',
+        height: '150px',
+        width: '150px',
+        marginRight: '20px',
         marginLeft: '65px',
         marginTop: '50px',
         borderRadius: '20px'
@@ -15,16 +15,20 @@ export default function Card(props){
         backgroundColor: 'white'
     }
     const nombreStyle = {
-        marginLeft: '55px',
-        fontSize: '23px',
-        paddingRight: '155px'
+        marginLeft: '25px',
+        fontSize: '15px',
+        paddingRight: '150px',
+        paddingLeft: '150px'
     }
     const buttonStyle2 ={
-        marginLeft: '180px',
+        marginLeft: '50px',
         borderRadius: '5px',
         padding: '10px'
     }
 
+    const divStyle ={
+        marginLeft: '-85px'
+    }
     const navigate = useNavigate()
     const {setItemIdContext} = useItemId()
     
@@ -33,7 +37,7 @@ export default function Card(props){
         navigate(`/detalleProducto/${itemId}`)
     }
     return<>
-        <div>
+        <div style={divStyle}>
             <button style={buttonStyle}>
                 <img style={imageStyle} type="image" src={props.content}></img>
             </button>
