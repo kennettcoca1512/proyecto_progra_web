@@ -21,24 +21,7 @@ import{
   createBrowserRouter,
   RouterProvider
 } from 'react-router-dom'
-import './index.css'
-import LandingPage from './routes/LandingPage.jsx'
-import LoginPage from './routes/LoginPage.jsx'
-import SigninPage from './routes/SigninPage.jsx'
-import RecuperacionPage from './routes/RecuperacionPage.jsx'
-import DashboardAdmin from './routes/DashboardAdmin.jsx'
-import ListaProductosAdmin from './routes/ListaProductosAdmin.jsx'
-import DetallesProductoAdmin from './routes/DetallesProductoAdmin.jsx'
-import AgregarProductosAdmin from './routes/AgregarProductosAdmin.jsx'
 
-import { UserProvider } from './context/UserContext/UserContext.jsx'
-
-import UserLoggedPage from './routes/UserLoggedPage.jsx'
-
-import{
-  createBrowserRouter,
-  RouterProvider
-} from 'react-router-dom'
 import ResultadosBusqueda from './routes/ResultadosBusqueda.jsx'
 import DetalleProducto from './routes/DetalleProducto.jsx'
 import { useNavigate } from 'react-router-dom';
