@@ -9,7 +9,7 @@ export const productosTotal = [
         RAM : "16GB",
         precio: 6000,
         stock: 32,
-        fecha: '2024-05-20',
+        fecha: '2023-03-20',
         vendido: 15,
         oferta: 'no'
     },

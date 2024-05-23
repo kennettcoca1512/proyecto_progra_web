@@ -54,20 +54,23 @@ export default function Header_RB(){
     
     const handleShowFiltered = () =>{
         let filtrados =  []
-        if (localStorage.getItem('tipoFiltro').toLowerCase() === 'nuevos'){
+        if (localStorage.getItem('tipoFiltro').toLowerCase() == 'nuevos'){
             filtrados = productosTotal.filter(item =>
                 item.fecha.toLowerCase().includes('2024-05')
             );
         }
-        else if (localStorage.getItem('tipoFiltro').toLowerCase() === 'mas-vendidos'){
+        else if (localStorage.getItem('tipoFiltro').toLowerCase() == 'mas-vendidos'){
             filtrados = productosTotal.filter(item =>
                 item.vendido > 20
             );
         }
-        else if(localStorage.getItem('tipoFiltro') === 'ofertas'){
+        else if(localStorage.getItem('tipoFiltro') == 'ofertas'){
             filtrados = productosTotal.filter(item =>
                 item.oferta.toLowerCase().includes('si')
             );
+        }else{
+            console.log('no hay filtro')
+            filtrados = productosTotal
         }
 
         setItemsFiltrados(filtrados);
@@ -75,7 +78,7 @@ export default function Header_RB(){
     }
     
     const handleShowClick = () =>{
-        let filtrados = productosTotal.filter(item =>
+        let filtrados = ItemsFiltrados.filter(item =>
             item.nombre.toLowerCase().includes(localStorage.getItem('busqueda').toLowerCase()) ||
             item.grafica.toLowerCase().includes(localStorage.getItem('busqueda').toLowerCase()) ||
             item.procesador.toLowerCase().includes(localStorage.getItem('busqueda').toLowerCase()) ||
@@ -98,7 +101,7 @@ export default function Header_RB(){
 
 
     useEffect(() => {
-        handleShowClick();  
+        localStorage.getItem('tipoFiltro') ? handleShowFiltered() :       handleShowClick();  
     }, [])
 
  

@@ -35,6 +35,7 @@ export default function Section_Sup_Nav(){
         marginRight: '1400px'
     }
     const Redirigir = () =>{
+        localStorage.removeItem('tipoFiltro')
         navigate('/resultadoBusqueda')
     }
     return (

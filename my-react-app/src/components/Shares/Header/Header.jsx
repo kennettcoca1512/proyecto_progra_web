@@ -52,8 +52,9 @@ export default function Header(){
     const handleAccountClick = () => {
         navigate('/account')
     }
-    const [tipoFiltro, setTipoFiltro] = useState('');
-
+    const [tipoFiltro, setTipoFiltro] = useState(() => {
+        return localStorage.getItem('tipoFiltro') || '';
+    });
     useEffect(() => {
         localStorage.setItem('tipoFiltro', tipoFiltro);
         console.log(localStorage.getItem('tipoFiltro'))
@@ -89,9 +90,9 @@ export default function Header(){
             <header style={spanstyle}>
                 <h1 style={h1Style} ><a href='' onClick={handleLandingPageClick} style={h1ClickStyle}>TOTAL HARDWARE</a></h1>
                 <ul style={listStyle}>
-                    <li style={liStyle}><a onClick={handleSectionsClick1}>Nuevos</a></li>
-                    <li style={liStyle}><a onClick={handleSectionsClick2}>Mas Vendidos</a></li>
-                    <li style={liStyle}><a onClick={handleSectionsClick3}>Ofertas</a></li>
+                    <li style={liStyle}><a className='aHeaderLink' href='' onClick={handleSectionsClick1}>Nuevos</a></li>
+                    <li style={liStyle}><a className='aHeaderLink' href='' onClick={handleSectionsClick2}>Mas Vendidos</a></li>
+                    <li style={liStyle}><a className='aHeaderLink' href='' onClick={handleSectionsClick3}>Ofertas</a></li>
                 </ul>
                 <img></img>
                 <span style={spanStyle}>
