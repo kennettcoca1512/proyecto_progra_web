@@ -29,64 +29,67 @@ const ItemDetail = () => {
 
     const spanStyle ={
         display: 'flex',
-        justifyContent: 'center',
+        justifyContent: 'flex-Start',
+        marginLeft: '100px'
         
     }
     const nombreStyle ={
-        paddingLeft:'50px',
-        fontSize: '30px'
+        paddingRight:'1200px',
+        fontSize: '15px'
     }
     const sectionStyle = {
-        marginTop: '100px'
+        marginTop: '100px',
+        marginLeft: '150px'
     }
     const dispStyle = {
         backgroundColor: '#f0f0f0',
         border: '2px solid black',
-        width: '400px',
-        paddingTop: '30px',
-        paddingBottom: '30px',
-        paddingLeft: '250px',
-        fontSize: '30px',
+        width: '100px',
+        paddingTop: '20px',
+        paddingBottom: '20px',
+        paddingLeft: '100px',
+        paddingRight: '100px',
+        fontSize: '15px',
         fontWeight: 'bolder',
         marginLeft: '200px'
     }
     const demasStyle={
         border: '2px solid black',
-        width: '400px',
+        width: '50px',
         height: '100',
-        paddingTop: '30px',
-        paddingBottom: '300px',
+        paddingTop: '20px',
+        paddingBottom: '50px',
         paddingLeft: '250px',
         marginRight: '30px',
         marginLeft: '200px'
     }
     const precioStyle ={
-        fontSize: '50px',
-        marginLeft:'-100px',
+        fontSize: '15px',
+        marginLeft:'-240px',
         paddingBottom: '20px'
     }
     const buttonStyle ={
-        padding: '20px',
+        padding: '10px',
         backgroundColor: 'black',
         color: 'white',
         fontWeight: 'bold',
-        fontSize: '35px',
-        marginLeft: '-140px',
+        fontSize: '10px',
+        marginLeft: '-240px',
         marginBottom: '10px'
     }
     const cantidadStyle ={
-        fontSize: '30px',
-        marginRight: '50px'
+        fontSize: '15px',
+        marginLeft: '-250px'
     }
     const spanStyle2={
         display: 'flex',
-        justifyContent: 'space-between',
-        marginRight: '250px'
+        justifyContent: 'space-evenly',
+        marginLeft: '-250px'
     }
     const buttonStyle2 ={
-        paddingLeft: '15px',
-        paddingRight: '15px',
-        fontSize: '25px',
+        paddingLeft: '10px',
+        paddingRight: '10px',
+        fontSize: '15px',
     }
     const sectionStyle2 ={
         border: '2px solid black',
@@ -109,14 +112,23 @@ const ItemDetail = () => {
     const h2style ={
         fontSize: '40px'
     }
+    const hrStyle={
+        marginLeft: '30px',
+        width: '1300px',
+        marginBottom: '40px'
+    }
+    const imgStyle ={
+        height: '300px',
+        width: '300px'
+    }
     return (
         <>
                 <h2 style={nombreStyle}>{item.nombre}</h2>
                 <br></br>
-                <hr></hr>
+                <hr style={hrStyle}></hr>
                 <section style={sectionStyle}>
                     <span style={spanStyle}>
-                        <img src={item.imagen}></img>
+                        <img style={imgStyle} src={item.imagen}></img>
                         <div>
                             <h2 style={dispStyle}>DISPONIBLE</h2>
                             <div style={demasStyle}>
