@@ -26,7 +26,7 @@ export default function Aside(){
         <h2> Admin</h2>
         <ul style={ulStyleA}> 
            <a href="" style={aStyle}><li style={liStyle}>Dasboard</li></a>
-           <a href="/" style={aStyle}><li style={liStyle}>Usuarios Registrados</li></a>
+           <a href="/UsuariosRegistrados" style={aStyle}><li style={liStyle}>Usuarios Registrados</li></a>
            <a href="" style={aStyle}><li style={liStyle}>Productos</li></a>
            <a href="/ListadoOrdenes" style={aStyle}><li style={liStyle}>Ordenes</li></a>
            <a href="" style={aStyle}><li style={liStyle}>Productos más vendidos</li></a>

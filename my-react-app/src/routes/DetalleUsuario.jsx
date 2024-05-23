@@ -2,7 +2,7 @@ import React from 'react';
 import Header from "../components/HeaderUO/HeaderLO"
 import Footer from "../components/FooterUO/Footer"
 import Aside from "../components/Usuarios_Orden/AsideUO/Aside"
-import { useItemId } from '../components/Context/ItemIdContext';
+import { useItemId } from '../context/itemIdContext'
 import {Usuarios} from "../data/Usuarios";
 
 const DetalleUsuario = () =>{

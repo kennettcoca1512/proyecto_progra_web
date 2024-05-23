@@ -1,5 +1,5 @@
 import { Navigate, useNavigate } from "react-router-dom";
-import { useItemId } from '../../Context/ItemIdContext';
+import { useItemId } from '../../../context/itemIdContext'
 
 export default function SectionCardLO(props){
     const trStyle = {

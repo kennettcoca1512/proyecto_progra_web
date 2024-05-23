@@ -1,7 +1,7 @@
 import Header from "../components/HeaderUO/HeaderLO"
 import Footer from "../components/FooterUO/Footer"
 import MetodoEnvio from "../components/Usuarios_Orden/MetodoEnvio/ME"
-import { useItemId } from '../components/Context/ItemIdContext'
+import { useItemId } from '../context/itemIdContext'
 import {Usuarios} from "../data/Usuarios"
 
 export default function DetalleOrden(){

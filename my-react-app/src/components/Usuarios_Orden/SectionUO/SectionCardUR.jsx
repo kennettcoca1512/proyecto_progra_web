@@ -1,5 +1,5 @@
 import { Navigate, useNavigate } from "react-router-dom";
-import { useItemId } from '../../Context/ItemIdContext';
+import { useItemId } from '../../../context/itemIdContext'
 import React, { useState } from 'react';
 
 export default function SectionCardUR(props){
