@@ -145,7 +145,7 @@ const Checkout = () =>{
                         <h2 className="titulo2" >Items en Pedido</h2>
                         <ul>
                             {
-                                items.map((item) => <li>{item.Almacenamiento}x{item.Marca} {item.Modelo} {item.Precio}</li>)
+                                items.map((item) => <li>1x{item.Marca} {item.Modelo} {item.Precio}</li>)
                             }
                         </ul>
                     </div>
