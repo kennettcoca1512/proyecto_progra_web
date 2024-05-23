@@ -41,7 +41,13 @@ const TablaProductos = () => {
     const handleView = (id) => {
         navigate(`/producto/${id}`);
     };
-
+    const tablaStyle={
+        fontSize: '15px'
+    }
+    const nombrestyle ={
+        fontSize: '10px',
+        paddingRight: '-100px'
+    }
     return (
         <section style={styles.section}>
             <div style={styles.tituloPagina}>
@@ -62,24 +68,24 @@ const TablaProductos = () => {
                 <table id="productTable" style={styles.tabla}>
                     <thead>
                         <tr>
-                            <th>ID</th>
-                            <th>Nombre</th>
-                            <th>Precio</th>
-                            <th>Fecha de registro</th>
-                            <th>Stock</th>
-                            <th>Estado</th>
-                            <th>Acciones</th>
+                            <th style={tablaStyle}>ID</th>
+                            <th style={tablaStyle}>Nombre</th>
+                            <th style={tablaStyle}>Precio</th>
+                            <th style={tablaStyle}>Fecha de registro</th>
+                            <th style={tablaStyle}>Stock</th>
+                            <th style={tablaStyle}>Estado</th>
+                            <th style={tablaStyle}>Acciones</th>
                         </tr>
                     </thead>
                     <tbody>
                         {productos.map((producto) => (
                             <tr key={producto.id}>
-                                <td>{producto.id}</td>
-                                <td style={styles.tablaNombre}>{producto.nombre}</td>
-                                <td>{producto.precio}</td>
-                                <td>{producto.fechaRegistro}</td>
-                                <td>{producto.stock}</td>
-                                <td>{producto.estado}</td>
+                                <td style={styles.tablaNombre}>{producto.id}</td>
+                                <td style={nombrestyle}>{producto.nombre}</td>
+                                <td style={styles.tablaNombre}>{producto.precio}</td>
+                                <td style={styles.tablaNombre}>{producto.fechaRegistro}</td>
+                                <td style={styles.tablaNombre}>{producto.stock}</td>
+                                <td style={styles.tablaNombre}>{producto.estado}</td>
                                 <td>
                                     <button type="button" style={styles.BotonAccion} onClick={() => handleView(producto.id)}>Editar</button>
                                     <button type="button" style={styles.BotonAccion} onClick={() => handleEliminar(producto.id)}>Eliminar</button>
@@ -156,7 +162,7 @@ const styles = {
     },
     tablaNombre: {
         width: '50%',
-        fontSize: '10px',
+        fontSize: '10px'
     },
     celda: {
         textAlign: 'center',

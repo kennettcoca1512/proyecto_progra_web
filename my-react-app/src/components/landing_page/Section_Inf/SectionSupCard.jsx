@@ -28,6 +28,7 @@ export default function Card2(props){
     const divStyle ={
         marginLeft: '-85px'
     }
+    
     const navigate = useNavigate()
     const {setItemIdContext} = useItemId();
 

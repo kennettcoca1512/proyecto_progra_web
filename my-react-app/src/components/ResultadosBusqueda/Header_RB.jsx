@@ -4,7 +4,7 @@ import { productosTotal } from "../../data/productosTotal"
 export default function Header_RB(){
 
     const labelStyle={
-        fontSize: '35px'
+        fontSize: '15px'
     }
     const divStule ={
         display : 'flex',
@@ -17,30 +17,34 @@ export default function Header_RB(){
         marginLeft: '20px'
     }
     const imgStyle ={
-        height: '200px',
-        width: '200px',
+        height: '130px',
+        width: '130px',
         marginRight: '20px'
     }
     const selectStyle={
-        height: '60px',
+        height: '35px',
         width: '220px',
-        fontSize: '30px',
+        fontSize: '15px',
         marginLeft: '30px'
     }
     const spanStyle ={
-        marginLeft: '75%',
+        marginLeft: '850px',
         marginBottom: '50px'
     }
     const divStyle = {
         backgroundColor:'grey',
-        padding: '20px',
-        fontSize: '30px',
+        padding: '15px',
+        fontSize: '15px',
         color: 'white',
-        paddingLeft: '60px',
-        paddingRight: '2100px',
-        marginLeft: '30px',
-        marginTop: '80px'
+        paddingLeft: '30px',
+        paddingRight: '1100px',
+        marginBottom: '60px',
+        marginLeft: '0px'
         
+    }
+    const h2Style ={
+        fontSize: '10px',
+        paddingRight: '40px'
     }
     const [sortCriteria, setSortCriteria] = useState('default')
     const [ItemsFiltrados, setItemsFiltrados] = useState(productosTotal)
@@ -123,7 +127,7 @@ export default function Header_RB(){
                     <span key={item.id} style={divStule}>
                         <img style={imgStyle} src={item.imagen}></img>
                         <div>
-                            <h2>{item.nombre}</h2>
+                            <h2 style={h2Style}>{item.nombre}</h2>
                             <p>S/.{item.precio}</p>
                         </div>
                     </span>

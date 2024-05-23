@@ -211,13 +211,13 @@ const styles = {
     },
     searchBar: {
         width: '100%',
-        padding: '8px',
+        padding: '5px',
         borderRadius: '5px',
         color: 'black',
         border: '1px solid black',
         backgroundColor: 'white',
         boxSizing: 'border-box',
-        fontSize : '30px',
+        fontSize : '15px',
         
         },
     BotonBuscar: {
@@ -241,7 +241,7 @@ const styles = {
     },
     tablamarcaProd: {
         
-        fontSize: '20px',
+        fontSize: '10px',
         
     },
 
