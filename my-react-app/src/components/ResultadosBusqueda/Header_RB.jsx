@@ -121,7 +121,7 @@ export default function Header_RB(){
             <br></br>
             <span>
                 {ItemsFiltrados.map(item => (
-                    <span style={divStule}>
+                    <span key={item.id} style={divStule}>
                         <img style={imgStyle} src={item.imagen}></img>
                         <div>
                             <h2>{item.nombre}</h2>

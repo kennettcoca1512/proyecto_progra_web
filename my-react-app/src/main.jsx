@@ -29,16 +29,12 @@ import DetalleOrden from './routes/DetalleOrden.jsx';
 import { ItemIdProvider } from './context/itemIdContext.jsx'
 import ResultadosBusqueda from './routes/ResultadosBusqueda.jsx'
 import DetalleProducto from './routes/DetalleProducto.jsx'
-<<<<<<< HEAD
-
-=======
 import { useNavigate } from 'react-router-dom';
-import DetalleOrden from './routes/DetalleOrden.jsx';
+//import DetalleOrden from './routes/DetalleOrden.jsx';
 import RegistroUsuario from './routes/RegistroUsuario.jsx';
 import CambioPassword from './routes/CambioPassword.jsx';
 import ListadoSeries from './routes/ListadoSeries.jsx';
 import MantenimientoSerie from './routes/MantenimientoSerie.jsx'
->>>>>>> detalle_orden
 
 
 const router = createBrowserRouter([
