@@ -1,12 +1,12 @@
-import Detalle_orden from "../components/Detalle_orden/Detalle_orden";
 import Footer from "../components/Shares/Footer/Footer";
 import Header from "../components/Shares/Header/Header";
+import Registro_Usuario from "../components/Registro_usuario/Registro_usuario";
 
-export default function DetalleOrden(){
+export default function RegistroUsuario(){
     return (
         <>
             <Header />           
-            <Detalle_orden />
+            <Registro_Usuario/>
             <Footer />              
         </>
     )
