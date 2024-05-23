@@ -1,3 +1,7 @@
+.container-Shoppingcart {
+  padding: 10px;
+}
+
 .cart {
   background-color: white;
   padding: 20px;
@@ -49,4 +53,14 @@
 .item-price p {
   margin-left: 20px;
   display: inline;
+}
+
+.button-as-text {
+  background: none;
+  border: none;
+  color: #888;
+  text-decoration: none; /* Opcional, para darle un estilo de enlace */
+  cursor: pointer; /* Para que se vea como un enlace al pasar el mouse */
+  padding: 5px;
+  font: inherit; /* Hereda la fuente del contenedor padre */
 }

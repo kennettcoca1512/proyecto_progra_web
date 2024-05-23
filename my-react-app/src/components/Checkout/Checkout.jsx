@@ -3,6 +3,8 @@ import { items } from "../../data/items"
 import { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import imagen from "./qrPago.png"
+import { CartContext } from "../ShoppingCart/CartContext";
+
 
 
 const Checkout = () =>{
@@ -12,7 +14,7 @@ const Checkout = () =>{
     const validItems = items.filter(item => typeof item.Precio === 'number');
     const subtotal = validItems.reduce((acc, item) => acc + item.Precio, 0);
     const impuesto = subtotal * 0.18;
-    const total = subtotal + impuesto + shippingCost;
+    const total = subtotal + shippingCost;
     const navigate = useNavigate();
     const validateForm = () => {
         const form = document.querySelector('form');
@@ -143,7 +145,7 @@ const Checkout = () =>{
                         <h2 className="titulo2" >Items en Pedido</h2>
                         <ul>
                             {
-                                items.map((item) => <li>{item.Marca} {item.Modelo} {item.Precio}</li>)
+                                items.map((item) => <li>{item.Almacenamiento}x{item.Marca} {item.Modelo} {item.Precio}</li>)
                             }
                         </ul>
                     </div>
