@@ -11,7 +11,8 @@ export default function SectionLO(){
         marginBottom: '15px',
         fontSize: '14px',
         height: '500px',
-        border: 'solid',
+        marginLeft: '10px'
+        
 
 
     }
@@ -25,9 +26,9 @@ export default function SectionLO(){
         borderCollapse: 'collapse',
     }
     const h2Style = {
-        background: '#9FA5A3',
         height :'40px',
         paddingLeft: '10px',
+        backgroundColor: 'grey',
 
     }
     

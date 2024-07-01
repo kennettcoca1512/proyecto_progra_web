@@ -8,6 +8,15 @@ export default function SectionCardLO(props){
 
         
     }
+    const butSty = {
+      marginLeft: '5px',
+        padding: '4px',
+        backgroundColor: 'black',
+        color: 'white',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+    }
     const navigate = useNavigate();
     const { setItemIdContext } = useItemId();
     const handleItemClick = (itemId) => {
@@ -26,7 +35,7 @@ export default function SectionCardLO(props){
       <td style={trStyle}>{props.Envios}</td>
       <td style={trStyle}>
 
-        <button onClick={() => handleItemClick(props.id)}>Ver</button>
+        <button onClick={() => handleItemClick(props.id)} style={butSty}>Ver</button>
          
       </td>
     </tr>     

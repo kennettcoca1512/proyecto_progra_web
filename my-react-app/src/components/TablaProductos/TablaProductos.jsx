@@ -154,7 +154,7 @@ const styles = {
         cursor: 'pointer',
     },
     tabla: {
-        width: '100%',
+        width: '80%',
         borderCollapse: 'collapse',
         marginTop: '0px',
         color: 'black',

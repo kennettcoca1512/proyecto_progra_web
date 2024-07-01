@@ -1,6 +1,5 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import './index.css'
 import CartPage from './routes/ShoppingCart.jsx'
 import Checkoutpage from './routes/Checkout.jsx'
 import OrdenCompleta from './routes/OrderComplete.jsx'

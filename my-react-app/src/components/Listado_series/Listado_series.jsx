@@ -184,13 +184,14 @@ const styles = {
         display: 'flex',
         justifyContent: 'space-between',
         alignItems: 'center',
-        backgroundColor: '#d9d9d9',
+        backgroundColor: 'grey',
         borderRadius: '5px'
     },
     titulo: {
         margin: '15px',
         color: 'black',
         fontSize: '30px',
+
         
     },
     BotonTitulo: {
@@ -231,7 +232,7 @@ const styles = {
         
     },
     tabla: {
-        width: '100%',
+        width: '90%',
         borderCollapse: 'collapse',
         marginTop: '0px',
         color: 'black',

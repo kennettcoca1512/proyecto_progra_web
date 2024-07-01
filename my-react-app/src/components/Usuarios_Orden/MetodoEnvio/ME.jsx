@@ -9,7 +9,7 @@ function MetodoEnvio({ selectedEnvioMethod }) {
 
     };
     const h3Stlye = {
-        background: '#9FA5A3',
+        backgroundColor: 'grey',
         height: '30px',
         marginBottom: '10px'
     }

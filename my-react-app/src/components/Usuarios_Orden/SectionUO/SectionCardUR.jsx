@@ -19,6 +19,15 @@ export default function SectionCardUR(props){
     const trStyleUR = {
       marginTop: '15px',
     }
+    const StyleBott = {
+      marginLeft: '5px',
+        padding: '4px',
+        backgroundColor: 'black',
+        color: 'white',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+    }
     const navigate = useNavigate();
     const { setItemIdContext } = useItemId();
     const handleItemClick = (itemId) => {
@@ -36,9 +45,9 @@ export default function SectionCardUR(props){
       <td style={trStyle}>{props.fecha}</td>
       <td style={trStyle}>{estado}</td>
       <td style={trStyle}>
-          <button onClick={() => handleItemClick(props.id)}>Ver</button>
+          <button onClick={() => handleItemClick(props.id)} style={StyleBott}>Ver</button>
           {' | '}
-          <button onClick={handleToggleStatus}>
+          <button onClick={handleToggleStatus} style={StyleBott}>
             {estado === 'Activo' ? 'Desactivar' : 'Activar'}
           </button>
         </td>

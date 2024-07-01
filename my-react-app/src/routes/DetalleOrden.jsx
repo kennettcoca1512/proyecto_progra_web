@@ -43,11 +43,11 @@ export default function DetalleOrden(){
         fontSize: '20px'
     }
     const h3Style ={
-        background: '#9FA5A3',
-        marginLeft: '20px',
-        marginRight: '20px',
-        height: '40px',
-        fontSize: '20px'
+      backgroundColor: 'grey',
+      marginLeft: '20px',
+      marginRight: '20px',
+      height: '40px',
+       fontSize: '20px'
 
 
     }

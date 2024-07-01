@@ -16,7 +16,7 @@ export default function Section_Sup_Nav(){
         height: '20px',
         padding: '10px',
         marginLeft:'0px',
-        paddingRight: '700px', 
+        paddingRight: '650px', 
         fontSize: '15px'
     }
     const navStyle2 = {
@@ -27,12 +27,14 @@ export default function Section_Sup_Nav(){
     }
     const barraStyle={
         marginLeft: '200px',
-        marginTop: '100px'
+        marginTop: '100px',
+        display : 'flex'
     }
     const sectionStyle ={
         marginTop: '60px',
         marginBottom: '30px',
-        marginRight: '1400px'
+        marginRight: '1400px',
+       
     }
     const Redirigir = () =>{
         localStorage.removeItem('tipoFiltro')

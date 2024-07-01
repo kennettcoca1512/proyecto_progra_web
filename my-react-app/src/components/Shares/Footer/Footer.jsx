@@ -15,7 +15,7 @@ export default function Footer(){
     const genlistStyle={
         display: 'flex',
         backgroundColor: 'grey',
-        maxWidth: '1400px'
+        maxWidth: '100%'
     }
     const liStyle={
         marginBottom:'20px',

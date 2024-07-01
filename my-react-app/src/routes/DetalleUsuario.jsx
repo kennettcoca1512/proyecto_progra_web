@@ -3,7 +3,6 @@ import React from 'react';
 //import Footer from "../components/FooterUO/Footer"
 import Header from '../components/Shares/Header/Header';
 import Footer from '../components/Shares/Footer/Footer';
-import Aside from "../components/Usuarios_Orden/AsideUO/Aside"
 import { useItemId } from '../context/itemIdContext'
 import {Usuarios} from "../data/Usuarios";
 import MenuNavAdmin from '../components/MenuNavAdmin/MenuNavAdmin';
@@ -37,7 +36,7 @@ const DetalleUsuario = () =>{
         borderCollapse: 'collapse',
     }
     const h2Style = {
-        background: '#9FA5A3',
+        background: 'grey',
         height :'40px',
         paddingLeft: '10px',
 
@@ -58,7 +57,19 @@ const DetalleUsuario = () =>{
     const tdStyle = {
         padding: '10px 70px 30px',
         textAlign: 'center',
+        
     }
+    const butSty = {
+        marginLeft: '5px',
+        padding: '4px',
+        backgroundColor: 'black',
+        color: 'white',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+
+    }
+    const tdStyl = {}
     const { itemId } = useItemId();
     const findItemById = (id) => {
         return Usuarios.find(item => item.id === parseInt(id));
@@ -104,7 +115,7 @@ const DetalleUsuario = () =>{
                                 <td style={tdStyle}>{item.total}</td>
                                 <td style={tdStyle}>{item.productos}</td>
                                 <td style={tdStyle}>{item.Estado}</td>
-                                <td style={tdStyle}><button >Ver</button></td>
+                                <td style={tdStyle}><button style={butSty}>Ver</button></td>
                             </tr>  
                         </tbody>          
                     </table>

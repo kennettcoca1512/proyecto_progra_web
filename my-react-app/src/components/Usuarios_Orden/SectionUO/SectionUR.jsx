@@ -10,7 +10,7 @@ export default function SectionUR(props) {
         marginRight: '20px',
         marginBottom: '15px',
         height: '500px',
-        border: 'solid'
+        marginLeft: '10px'
 
 
     };
@@ -22,7 +22,7 @@ export default function SectionUR(props) {
     };
 
     const h2Style = {
-        background: '#9FA5A3',
+        backgroundColor: 'grey',
         height: '40px',
         paddingLeft: '10px',
     };

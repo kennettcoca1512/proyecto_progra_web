@@ -34,19 +34,31 @@ const SearchComponent = ({ usuarios, setElementosFiltrados }) => {
     };
 
     const inputStyleUR = {
-        width: '80%',
+        width: '70%',
         height: '30px',
+        marginLeft: "none",
+        paddingLeft: "none",
     };
     const selectStyleUR = {
       height: '30px',
       width: '15%'
     }
     const mostrarUR = {
-      height: '25px',
+        marginLeft: '5px',
+        padding: '4px',
+        backgroundColor: 'black',
+        color: 'white',
+        border: 'none',
+        borderRadius: '5px',
+        cursor: 'pointer',
+    }
+    const divSt = {
+        paddingLeft:'0',
+        marginLeft : '',
     }
 
     return (
-        <div>
+        <div style={divSt}>
             <input
                 type="text"
                 placeholder="Buscar por nombre, apellido o id ..."

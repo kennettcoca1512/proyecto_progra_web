@@ -4,7 +4,6 @@ import Header from '../components/Shares/Header/Header'
 //import Footer from '../components/FooterUO/Footer'
 import Footer from '../components/Shares/Footer/Footer'
 import Section from '../components/Usuarios_Orden/SectionUO/SectionUR'
-import Aside from '../components/Usuarios_Orden/AsideUO/Aside'
 import MenuNavAdmin from '../components/MenuNavAdmin/MenuNavAdmin'
 export default function UsuariosRegistrados(){
     const UR = {
